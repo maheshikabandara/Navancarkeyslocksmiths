@@ -2092,3 +2092,919 @@ function Paragraph6() {
 function Container73() {
   return (
     <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[24px] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">Emma K.</p>
+    </div>
+  );
+}
+
+function IconBase53() {
+  return (
+    <div className="relative shrink-0 size-[14px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14 14">
+        <g clipPath="url(#clip0_6_1579)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p127a3700} fill="var(--fill-0, #99A1AF)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1579">
+            <rect fill="white" height="14" width="14" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Container74() {
+  return (
+    <div className="content-stretch flex gap-[8px] items-center relative shrink-0 w-full" data-name="Container">
+      <IconBase53 />
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic relative shrink-0 text-[#99a1af] text-[14px] whitespace-nowrap">Kells</p>
+    </div>
+  );
+}
+
+function Container72() {
+  return (
+    <div className="content-stretch flex flex-col gap-[8px] h-[61px] items-start pt-[12px] relative shrink-0 w-full" data-name="Container">
+      <div aria-hidden="true" className="absolute border-[#364153] border-solid border-t inset-0 pointer-events-none" />
+      <Container73 />
+      <Container74 />
+    </div>
+  );
+}
+
+function Container70() {
+  return (
+    <div className="relative rounded-[14px] self-stretch shrink-0 w-[405.344px]" style={{ backgroundImage: "linear-gradient(136.4deg, rgb(0, 0, 0) 0%, rgb(16, 24, 40) 50%, rgb(0, 0, 0) 100%)" }} data-name="Container">
+      <div aria-hidden="true" className="absolute border-2 border-black border-solid inset-0 pointer-events-none rounded-[14px] shadow-[0px_20px_25px_0px_rgba(0,0,0,0.1),0px_8px_10px_0px_rgba(0,0,0,0.1)]" />
+      <div className="content-stretch flex flex-col gap-[19px] items-start p-[34px] relative size-full">
+        <IconBase47 />
+        <Container71 />
+        <Paragraph6 />
+        <Container72 />
+      </div>
+    </div>
+  );
+}
+
+function Container59() {
+  return (
+    <div className="content-stretch flex gap-[32px] items-start relative shrink-0" data-name="Container">
+      <Container60 />
+      <Container65 />
+      <Container70 />
+    </div>
+  );
+}
+
+function Link7() {
+  return (
+    <div className="bg-black h-[64px] relative rounded-[10px] shrink-0 w-full" data-name="Link">
+      <div aria-hidden="true" className="absolute border-2 border-black border-solid inset-0 pointer-events-none rounded-[10px]" />
+      <p className="-translate-x-1/2 absolute font-['Inter:Bold',sans-serif] font-bold leading-[28px] left-[183.5px] not-italic text-[18px] text-center text-white top-[17px] whitespace-nowrap">Read More Reviews on Google →</p>
+    </div>
+  );
+}
+
+function Container75() {
+  return (
+    <div className="content-stretch flex flex-col h-[64px] items-start pl-[457.375px] pr-[457.391px] relative shrink-0 w-[1280px]" data-name="Container">
+      <Link7 />
+    </div>
+  );
+}
+
+function Container56() {
+  return (
+    <div className="content-stretch flex flex-col gap-[56px] items-center justify-center relative shrink-0 w-full" data-name="Container">
+      <Container57 />
+      <Container59 />
+      <Container75 />
+    </div>
+  );
+}
+
+function ReviewsSection() {
+  return (
+    <div className="bg-[#f6f6f6] h-[820.75px] relative shrink-0 w-full" data-name="ReviewsSection">
+      <div className="content-stretch flex flex-col items-start pt-[80px] px-[80px] relative size-full">
+        <Container56 />
+      </div>
+    </div>
+  );
+}
+
+function IconBase54() {
+  return (
+    <div className="h-[24px] overflow-clip relative shrink-0 w-full" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Vector" />
+      </svg>
+      <div className="absolute inset-[6.25%_15.63%]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.5 20.9992">
+          <path d={svgPaths.p1844500} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Container80() {
+  return (
+    <div className="bg-[#c50101] relative rounded-[10px] shrink-0 size-[48px]" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[12px] px-[12px] relative size-full">
+        <IconBase54 />
+      </div>
+    </div>
+  );
+}
+
+function Heading12() {
+  return (
+    <div className="content-stretch flex h-[28px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[28px] min-w-px not-italic relative text-[20px] text-black">All Car Brands</p>
+    </div>
+  );
+}
+
+function Container81() {
+  return (
+    <div className="flex-[1_0_0] h-[84px] min-w-px relative" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[8px] items-start relative size-full">
+        <Heading12 />
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#4a5565] text-[16px] w-[552px]">From Ford to Mercedes, we work with all makes and models. Modern key fobs, transponders, and traditional keys.</p>
+      </div>
+    </div>
+  );
+}
+
+function Container79() {
+  return (
+    <div className="content-stretch flex gap-[16px] h-[84px] items-start relative shrink-0 w-full" data-name="Container">
+      <Container80 />
+      <Container81 />
+    </div>
+  );
+}
+
+function IconBase55() {
+  return (
+    <div className="h-[24px] overflow-clip relative shrink-0 w-full" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Vector" />
+      </svg>
+      <div className="absolute inset-[15.63%_12.5%_6.41%_12.5%]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 18.7126">
+          <path d={svgPaths.p2ef59400} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Container83() {
+  return (
+    <div className="bg-[#c50101] relative rounded-[10px] shrink-0 size-[48px]" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[12px] px-[12px] relative size-full">
+        <IconBase55 />
+      </div>
+    </div>
+  );
+}
+
+function Heading13() {
+  return (
+    <div className="content-stretch flex h-[28px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[28px] min-w-px not-italic relative text-[20px] text-black">Years of Experience</p>
+    </div>
+  );
+}
+
+function Container84() {
+  return (
+    <div className="flex-[1_0_0] h-[84px] min-w-px relative" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[8px] items-start relative size-full">
+        <Heading13 />
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#4a5565] text-[16px] w-[552px]">Fully trained and insured technicians with extensive experience in automotive locksmithing.</p>
+      </div>
+    </div>
+  );
+}
+
+function Container82() {
+  return (
+    <div className="content-stretch flex gap-[16px] h-[84px] items-start relative shrink-0 w-full" data-name="Container">
+      <Container83 />
+      <Container84 />
+    </div>
+  );
+}
+
+function IconBase56() {
+  return (
+    <div className="h-[24px] overflow-clip relative shrink-0 w-full" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Vector" />
+      </svg>
+      <div className="absolute inset-[3.12%_15.62%]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.5022 22.5024">
+          <path d={svgPaths.p38802c00} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Container86() {
+  return (
+    <div className="bg-[#c50101] relative rounded-[10px] shrink-0 size-[48px]" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[12px] px-[12px] relative size-full">
+        <IconBase56 />
+      </div>
+    </div>
+  );
+}
+
+function Heading14() {
+  return (
+    <div className="content-stretch flex h-[28px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[28px] min-w-px not-italic relative text-[20px] text-black">Emergency Ready</p>
+    </div>
+  );
+}
+
+function Container87() {
+  return (
+    <div className="flex-[1_0_0] h-[84px] min-w-px relative" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[8px] items-start relative size-full">
+        <Heading14 />
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#4a5565] text-[16px] w-[552px]">{`Available 24/7 for emergencies. We understand that lockouts don't happen at convenient times.`}</p>
+      </div>
+    </div>
+  );
+}
+
+function Container85() {
+  return (
+    <div className="content-stretch flex gap-[16px] h-[84px] items-start relative shrink-0 w-full" data-name="Container">
+      <Container86 />
+      <Container87 />
+    </div>
+  );
+}
+
+function IconBase57() {
+  return (
+    <div className="h-[24px] overflow-clip relative shrink-0 w-full" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g id="Vector" />
+      </svg>
+      <div className="absolute inset-[18.72%_34.37%_19.77%_3.12%]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 15.0037 14.7635">
+          <path d={svgPaths.pe249800} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+      <div className="absolute inset-[18.75%_2.53%_19.77%_57.58%]" data-name="Vector">
+        <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 9.5745 14.7563">
+          <path d={svgPaths.p271ffc80} fill="var(--fill-0, white)" id="Vector" />
+        </svg>
+      </div>
+    </div>
+  );
+}
+
+function Container89() {
+  return (
+    <div className="bg-[#c50101] relative rounded-[10px] shrink-0 size-[48px]" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col items-start pt-[12px] px-[12px] relative size-full">
+        <IconBase57 />
+      </div>
+    </div>
+  );
+}
+
+function Heading15() {
+  return (
+    <div className="content-stretch flex h-[28px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[28px] min-w-px not-italic relative text-[20px] text-black">Customer First</p>
+    </div>
+  );
+}
+
+function Container90() {
+  return (
+    <div className="h-[60px] relative shrink-0 w-[507.297px]" data-name="Container">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[8px] items-start relative size-full">
+        <Heading15 />
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#4a5565] text-[16px] whitespace-nowrap">Fair pricing, no hidden fees. We explain everything before we start work.</p>
+      </div>
+    </div>
+  );
+}
+
+function Container88() {
+  return (
+    <div className="content-stretch flex gap-[16px] h-[60px] items-start relative shrink-0 w-full" data-name="Container">
+      <Container89 />
+      <Container90 />
+    </div>
+  );
+}
+
+function Container78() {
+  return (
+    <div className="content-stretch flex flex-col gap-[24px] h-[384px] items-start relative shrink-0 w-full" data-name="Container">
+      <Container79 />
+      <Container82 />
+      <Container85 />
+      <Container88 />
+    </div>
+  );
+}
+
+function Container77() {
+  return (
+    <div className="content-stretch flex flex-col gap-[29px] items-start relative shrink-0 w-[616px]" data-name="Container">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[0] not-italic relative shrink-0 text-[48px] text-black w-full">
+        <span className="leading-[48px]">{`Your Local `}</span>
+        <span className="leading-[48px] text-[#c50101]">Car Key Specialists</span>
+      </p>
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[32.5px] not-italic relative shrink-0 text-[#364153] text-[20px] w-full">{`We're a mobile locksmith service based in Navan, serving Meath and surrounding areas. We specialize in car keys, emergency lockouts, and key fob programming.`}</p>
+      <Container78 />
+    </div>
+  );
+}
+
+function Container91() {
+  return (
+    <div className="flex-[1_0_0] h-[920px] min-w-px relative rounded-[14px]" data-name="Container">
+      <div aria-hidden="true" className="absolute inset-0 pointer-events-none rounded-[14px]">
+        <div className="absolute bg-[rgba(255,255,255,0)] inset-0 rounded-[14px]" />
+        <img alt="" className="absolute max-w-none object-cover rounded-[14px] size-full" src={aboutImg} />
+      </div>
+      <div className="size-full" />
+      <div aria-hidden="true" className="absolute border-4 border-[#c50101] border-solid inset-0 pointer-events-none rounded-[14px] shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]" />
+    </div>
+  );
+}
+
+function Container93() {
+  return (
+    <div className="content-stretch flex h-[20px] items-start relative shrink-0 w-full" data-name="Container">
+      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-px not-italic relative text-[#393939] text-[14px]">Serving</p>
+    </div>
+  );
+}
+
+function Container94() {
+  return (
+    <div className="content-stretch flex h-[32px] items-start relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[32px] not-italic relative shrink-0 text-[24px] text-black whitespace-nowrap">{`Meath & Beyond`}</p>
+    </div>
+  );
+}
+
+function Container92() {
+  return (
+    <div className="absolute bg-white content-stretch flex flex-col gap-[4px] h-[108px] items-start left-[586px] pb-[2px] pt-[26px] px-[34px] rounded-[10px] top-[105px] w-[259.391px]" data-name="Container">
+      <div aria-hidden="true" className="absolute border-2 border-[#c50101] border-solid inset-0 pointer-events-none rounded-[10px] shadow-[0px_20px_25px_0px_rgba(0,0,0,0.1),0px_8px_10px_0px_rgba(0,0,0,0.1)]" />
+      <Container93 />
+      <Container94 />
+    </div>
+  );
+}
+
+function Container76() {
+  return (
+    <div className="content-stretch flex gap-[48px] items-center justify-center relative shrink-0 w-full" data-name="Container">
+      <Container77 />
+      <Container91 />
+      <Container92 />
+    </div>
+  );
+}
+
+function AboutSection() {
+  return (
+    <div className="bg-[#f9fafb] relative shrink-0 w-full" data-name="AboutSection">
+      <div className="content-stretch flex flex-col items-start p-[80px] relative size-full">
+        <Container76 />
+      </div>
+    </div>
+  );
+}
+
+function IconBase58() {
+  return (
+    <div className="relative shrink-0 size-[32px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g clipPath="url(#clip0_6_1533)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.pf3ff880} fill="var(--fill-0, #DC0000)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1533">
+            <rect fill="white" height="32" width="32" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Link8() {
+  return (
+    <div className="bg-white relative rounded-[14px] shadow-[0px_25px_50px_0px_rgba(0,0,0,0.25)] shrink-0" data-name="Link">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[8px] items-center px-[29px] py-[24px] relative size-full">
+        <IconBase58 />
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[#dc0000] text-[20px] text-center whitespace-nowrap">CALL NOW: 086 200 0066</p>
+      </div>
+    </div>
+  );
+}
+
+function IconBase59() {
+  return (
+    <div className="relative shrink-0 size-[32px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 32 32">
+        <g clipPath="url(#clip0_6_1639)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p1c126600} fill="var(--fill-0, white)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1639">
+            <rect fill="white" height="32" width="32" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Link9() {
+  return (
+    <div className="bg-[rgba(0,0,0,0.3)] relative rounded-[14px] shrink-0" data-name="Link">
+      <div aria-hidden="true" className="absolute border-2 border-[rgba(255,255,255,0.5)] border-solid inset-0 pointer-events-none rounded-[14px]" />
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex gap-[8px] items-center px-[38px] py-[26px] relative size-full">
+        <IconBase59 />
+        <p className="font-['Inter:Bold',sans-serif] font-bold leading-[28px] not-italic relative shrink-0 text-[20px] text-center text-white whitespace-nowrap">WHATSAPP US</p>
+      </div>
+    </div>
+  );
+}
+
+function Container96() {
+  return (
+    <div className="content-stretch flex gap-[24px] h-[84px] items-center justify-center pl-[119.375px] pr-[119.391px] relative shrink-0" data-name="Container">
+      <Link8 />
+      <Link9 />
+    </div>
+  );
+}
+
+function IconBase60() {
+  return (
+    <div className="relative shrink-0 size-[20px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g clipPath="url(#clip0_6_1527)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p200d7630} fill="var(--fill-0, white)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1527">
+            <rect fill="white" height="20" width="20" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Paragraph7() {
+  return (
+    <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Paragraph">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[0px] text-center text-white whitespace-nowrap">
+        <span className="leading-[28px] text-[18px]">{`Average Response Time: `}</span>
+        <span className="font-['Inter:Bold',sans-serif] font-bold leading-[28px] text-[18px]">20-30 Minutes</span>
+      </p>
+    </div>
+  );
+}
+
+function Container97() {
+  return (
+    <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex gap-[8px] items-center px-[32px] py-[16px] relative rounded-[10px] shrink-0" data-name="Container">
+      <IconBase60 />
+      <Paragraph7 />
+    </div>
+  );
+}
+
+function Container98() {
+  return (
+    <div className="content-stretch flex h-[20px] items-start opacity-75 relative shrink-0 w-[896px]" data-name="Container">
+      <p className="flex-[1_0_0] font-['Inter:Medium',sans-serif] font-medium leading-[20px] min-w-px not-italic relative text-[14px] text-center text-white">{`Available 24/7 • Mobile Service • All Car Makes & Models`}</p>
+    </div>
+  );
+}
+
+function Container95() {
+  return (
+    <div className="content-stretch flex flex-col gap-[35px] items-center relative shrink-0 w-full" data-name="Container">
+      <p className="font-['Inter:Bold',sans-serif] font-bold leading-[75px] not-italic relative shrink-0 text-[60px] text-center text-white whitespace-nowrap">Locked Out or Lost Your Keys?</p>
+      <p className="font-['Inter:Medium',sans-serif] font-medium leading-[36px] not-italic relative shrink-0 text-[30px] text-center text-white whitespace-nowrap">{`We're on the way, call now and get back on the road fast.`}</p>
+      <Container96 />
+      <Container97 />
+      <Container98 />
+    </div>
+  );
+}
+
+function FinalCta() {
+  return (
+    <div className="relative shrink-0 w-full" style={{ backgroundImage: "linear-gradient(156.878deg, rgb(197, 1, 1) 0%, rgb(186, 1, 1) 10.55%, rgb(177, 1, 1) 19.904%, rgb(167, 1, 1) 29.848%, rgb(155, 1, 1) 40.961%, rgb(144, 1, 1) 52.161%, rgb(132, 1, 1) 63.431%, rgb(122, 1, 1) 73.679%, rgb(114, 1, 1) 81.333%, rgb(104, 1, 1) 90.687%, rgb(95, 0, 0) 100%)" }} data-name="Final CTA">
+      <div className="flex flex-col justify-center size-full">
+        <div className="content-stretch flex flex-col items-start justify-center px-[80px] py-[120px] relative size-full">
+          <Container95 />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Heading16() {
+  return (
+    <div className="content-stretch flex h-[32px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[32px] min-w-px not-italic relative text-[#c50101] text-[24px]">Navan Car Keys Locksmiths</p>
+    </div>
+  );
+}
+
+function IconBase61() {
+  return (
+    <div className="relative shrink-0 size-[20px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g clipPath="url(#clip0_6_1599)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p1678ab00} fill="var(--fill-0, white)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1599">
+            <rect fill="white" height="20" width="20" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Link10() {
+  return (
+    <div className="content-stretch flex gap-[12px] h-[24px] items-center relative shrink-0 w-full" data-name="Link">
+      <IconBase61 />
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">086 200 0066</p>
+    </div>
+  );
+}
+
+function IconBase62() {
+  return (
+    <div className="relative shrink-0 size-[20px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g clipPath="url(#clip0_6_1523)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p14089580} fill="var(--fill-0, white)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1523">
+            <rect fill="white" height="20" width="20" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Link11() {
+  return (
+    <div className="content-stretch flex gap-[12px] h-[24px] items-center relative shrink-0 w-full" data-name="Link">
+      <IconBase62 />
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">navancarkeys@gmail.com</p>
+    </div>
+  );
+}
+
+function IconBase63() {
+  return (
+    <div className="relative shrink-0 size-[20px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
+        <g clipPath="url(#clip0_6_1591)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p3a797700} fill="var(--fill-0, white)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1591">
+            <rect fill="white" height="20" width="20" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Container103() {
+  return (
+    <div className="content-stretch flex gap-[12px] items-center relative shrink-0 w-full" data-name="Container">
+      <IconBase63 />
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[16px] text-white w-[291px]">{`Meath `}</p>
+    </div>
+  );
+}
+
+function Container102() {
+  return (
+    <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-full" data-name="Container">
+      <Link10 />
+      <Link11 />
+      <Container103 />
+    </div>
+  );
+}
+
+function Container101() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[24px] h-[252px] items-start left-0 top-0 w-[394.656px]" data-name="Container">
+      <Heading16 />
+      <Container102 />
+    </div>
+  );
+}
+
+function Heading17() {
+  return (
+    <div className="content-stretch flex h-[28px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[28px] min-w-px not-italic relative text-[#c50101] text-[20px]">Service Areas</p>
+    </div>
+  );
+}
+
+function Frame7() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-[103px]">
+      <p className="relative shrink-0 w-full">Navan</p>
+      <p className="relative shrink-0 w-full">Kells</p>
+      <p className="relative shrink-0 w-full">Dunshaughlin</p>
+      <p className="relative shrink-0 w-full">Slane</p>
+    </div>
+  );
+}
+
+function Frame8() {
+  return (
+    <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-[83px]">
+      <p className="relative shrink-0 w-full">Trim</p>
+      <p className="relative shrink-0 w-full">Athboy</p>
+      <p className="relative shrink-0 w-full">Ashbourne</p>
+      <p className="relative shrink-0 w-full">Ratoath</p>
+    </div>
+  );
+}
+
+function Frame9() {
+  return (
+    <div className="content-stretch flex font-['Inter:Regular',sans-serif] font-normal items-center justify-between leading-[24px] not-italic relative shrink-0 text-[#d1d5dc] text-[16px] w-[286.328px]">
+      <Frame7 />
+      <Frame8 />
+    </div>
+  );
+}
+
+function Paragraph8() {
+  return (
+    <div className="content-stretch flex h-[20px] items-start relative shrink-0 w-full" data-name="Paragraph">
+      <p className="flex-[1_0_0] font-['Inter:Regular',sans-serif] font-normal leading-[20px] min-w-px not-italic relative text-[#99a1af] text-[14px]">+ surrounding areas</p>
+    </div>
+  );
+}
+
+function Container104() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[20px] items-start left-[442.66px] top-0 w-[394.672px]" data-name="Container">
+      <Heading17 />
+      <Frame9 />
+      <Paragraph8 />
+    </div>
+  );
+}
+
+function Heading18() {
+  return (
+    <div className="content-stretch flex h-[28px] items-start relative shrink-0 w-full" data-name="Heading 3">
+      <p className="flex-[1_0_0] font-['Inter:Bold',sans-serif] font-bold leading-[28px] min-w-px not-italic relative text-[#c50101] text-[20px]">Our Services</p>
+    </div>
+  );
+}
+
+function ListItem() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="List Item">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#d1d5dc] text-[16px] whitespace-nowrap">• Car Key Replacement</p>
+    </div>
+  );
+}
+
+function ListItem1() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="List Item">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#d1d5dc] text-[16px] whitespace-nowrap">• Spare Car Keys</p>
+    </div>
+  );
+}
+
+function ListItem2() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="List Item">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#d1d5dc] text-[16px] whitespace-nowrap">• Key Fob Programming</p>
+    </div>
+  );
+}
+
+function ListItem3() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="List Item">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#d1d5dc] text-[16px] whitespace-nowrap">• Emergency Lockout</p>
+    </div>
+  );
+}
+
+function ListItem4() {
+  return (
+    <div className="content-stretch flex items-center relative shrink-0 w-full" data-name="List Item">
+      <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#d1d5dc] text-[16px] whitespace-nowrap">{`• ECU Tuning & Remapping`}</p>
+    </div>
+  );
+}
+
+function List() {
+  return (
+    <div className="content-stretch flex flex-col gap-[8px] h-[152px] items-start justify-center relative shrink-0 w-full" data-name="List">
+      <ListItem />
+      <ListItem1 />
+      <ListItem2 />
+      <ListItem3 />
+      <ListItem4 />
+    </div>
+  );
+}
+
+function IconBase64() {
+  return (
+    <div className="relative shrink-0 size-[24px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
+        <g clipPath="url(#clip0_6_1519)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p29b46d00} fill="var(--fill-0, white)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1519">
+            <rect fill="white" height="24" width="24" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Text1() {
+  return (
+    <div className="relative shrink-0" data-name="Text">
+      <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center justify-center relative size-full">
+        <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap">Follow us on Facebook</p>
+      </div>
+    </div>
+  );
+}
+
+function Link12() {
+  return (
+    <div className="content-stretch flex gap-[12px] h-[24px] items-center relative shrink-0 w-full" data-name="Link">
+      <IconBase64 />
+      <Text1 />
+    </div>
+  );
+}
+
+function Container105() {
+  return (
+    <div className="absolute content-stretch flex flex-col gap-[24px] h-[252px] items-start left-[885.33px] top-0 w-[394.656px]" data-name="Container">
+      <Heading18 />
+      <List />
+      <Link12 />
+    </div>
+  );
+}
+
+function Container100() {
+  return (
+    <div className="h-[252px] relative shrink-0 w-full" data-name="Container">
+      <Container101 />
+      <Container104 />
+      <Container105 />
+    </div>
+  );
+}
+
+function Paragraph9() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Paragraph">
+      <div className="flex flex-row items-center justify-center size-full">
+        <div className="content-stretch flex items-center justify-center px-[428px] relative size-full">
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[24px] not-italic relative shrink-0 text-[#99a1af] text-[16px] text-center whitespace-nowrap">© 2026 Navan Car Keys Locksmiths. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function IconBase65() {
+  return (
+    <div className="relative shrink-0 size-[16px]" data-name="IconBase">
+      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16 16">
+        <g clipPath="url(#clip0_6_1647)" id="IconBase">
+          <g id="Vector" />
+          <path d={svgPaths.p3bfb7a60} fill="var(--fill-0, #99A1AF)" id="Vector_2" />
+        </g>
+        <defs>
+          <clipPath id="clip0_6_1647">
+            <rect fill="white" height="16" width="16" />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+  );
+}
+
+function Paragraph10() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Paragraph">
+      <div className="flex flex-row items-center justify-center size-full">
+        <div className="content-stretch flex gap-[12px] items-center justify-center px-[488px] relative size-full">
+          <IconBase65 />
+          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[20px] not-italic relative shrink-0 text-[#99a1af] text-[14px] text-center whitespace-nowrap">Fully Insured • Licensed • Professional Service</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Container106() {
+  return (
+    <div className="content-stretch flex flex-col gap-[8px] h-[85px] items-start pt-[33px] relative shrink-0 w-full" data-name="Container">
+      <div aria-hidden="true" className="absolute border-[#1e2939] border-solid border-t inset-0 pointer-events-none" />
+      <Paragraph9 />
+      <Paragraph10 />
+    </div>
+  );
+}
+
+function Container99() {
+  return (
+    <div className="content-stretch flex flex-col gap-[32px] h-[369px] items-start relative shrink-0 w-full" data-name="Container">
+      <Container100 />
+      <Container106 />
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="bg-black h-[469px] relative shrink-0 w-full" data-name="Footer">
+      <div aria-hidden="true" className="absolute border-[#c50101] border-solid border-t-4 inset-0 pointer-events-none" />
+      <div className="content-stretch flex flex-col items-start pt-[64px] px-[80px] relative size-full">
+        <Container99 />
+      </div>
+    </div>
+  );
+}
+
+export default function NavanCarKeysLocksmiths() {
+  return (
+    <div className="content-stretch flex flex-col items-start relative size-full" data-name="Navan Car Keys Locksmiths">
+      <EmergencyBar />
+      <div className="flex items-center justify-center relative shrink-0 w-full">
+        <div className="-scale-y-100 flex-none rotate-180 w-full">
+          <HeroNav />
+        </div>
+      </div>
+      <EmergencySteps />
+      <ServicesSection />
+      <TrustStrip />
+      <ProofSection />
+      <ReviewsSection />
+      <AboutSection />
+      <FinalCta />
+      <Footer />
+    </div>
+  );
+}
