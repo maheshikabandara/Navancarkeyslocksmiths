@@ -12,21 +12,10 @@ import aboutImg from "../about.png";
 function EmergencyBar() {
   return (
     <div className="bg-[#c50101] w-full z-50 relative">
-      <div className="w-full mx-auto px-6 lg:px-[80px] py-[12px] flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between">
-        <div className="flex gap-[12px] items-center">
-          <p className="font-semibold text-[14px] md:text-[16px] text-white whitespace-normal tracking-wide">
-            {`LOCKED OUT? WE'RE 20–30 MINUTES AWAY`}
-          </p>
-        </div>
-        <div className="flex gap-[16px] items-center">
-          <div className="flex gap-[8px] items-center">
-            <Phone size={20} weight="fill" className="text-white" />
-            <p className="font-bold text-[14px] md:text-[16px] text-white whitespace-nowrap">Call Now: 086 200 0066</p>
-          </div>
-          <div className="hidden md:flex items-start">
-            <p className="font-normal text-[14px] text-white whitespace-nowrap">Available 24/7</p>
-          </div>
-        </div>
+      <div className="w-full mx-auto px-6 py-[12px] flex items-center justify-center text-center">
+        <p className="font-semibold text-[14px] md:text-[16px] text-white tracking-wide">
+          {`LOCKED OUT? WE'RE 20–30 MINUTES AWAY`}
+        </p>
       </div>
     </div>
   );
@@ -34,12 +23,11 @@ function EmergencyBar() {
 
 function HeroNav() {
   return (
-    // 1. Hero + Nav Background Gradient 
     <div className="w-full flex flex-col bg-[linear-gradient(146deg,#000_0%,#101828_50%,#000_100%)]" data-name="Hero + Nav">
       
-      {/* Navbar Area (Transparent to show gradient) */}
-      <div className="w-full border-b border-white/5 z-40 relative">
-        <div className="w-full mx-auto px-6 lg:px-[80px] py-6 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+      {/* 1. Solid Navbar Area */}
+      <div className="w-full bg-[#0A0F1A] border-b border-white/5 z-40 relative">
+        <div className="w-full mx-auto px-6 lg:px-[80px] py-5 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
           <p className="font-bold text-[20px] md:text-[26px] text-white whitespace-nowrap tracking-tight">
             Navan Car Keys Locksmiths
           </p>
@@ -50,22 +38,24 @@ function HeroNav() {
             <p className="cursor-pointer hover:text-[#c50101] transition-colors duration-300">Contact</p>
           </div>
           
-          <div className="flex gap-6 items-center">
-            <div className="flex gap-2 items-center text-white">
+          <div className="flex gap-5 md:gap-6 items-center">
+            {/* Highlighted Red Call Button */}
+            <div className="bg-[#c50101] hover:bg-red-700 transition-colors duration-300 px-5 py-2.5 rounded-[8px] flex gap-2 items-center text-white cursor-pointer shadow-lg">
               <Phone size={22} weight="fill" />
-              <p className="font-semibold text-[16px]">086 200 0066</p>
+              <p className="font-bold text-[15px] md:text-[16px] whitespace-nowrap">086 200 0066</p>
             </div>
+            
             <div className="hidden sm:flex gap-2 items-center text-white">
               <MapPin size={22} weight="fill" />
-              <p className="font-normal text-[15px]">Serving Meath</p>
+              <p className="font-normal text-[15px] whitespace-nowrap">Serving Meath</p>
             </div>
-            <FacebookLogo size={28} weight="fill" className="text-white cursor-pointer hover:text-[#c50101] transition-colors" />
+            <FacebookLogo size={32} weight="fill" className="text-white cursor-pointer hover:text-[#c50101] transition-colors" />
           </div>
         </div>
       </div>
 
-      {/* Hero Content Area */}
-      <div className="w-full flex flex-col lg:flex-row flex-1 min-h-[calc(100vh-140px)]">
+      {/* 2. Hero Content Area */}
+      <div className="w-full flex flex-col lg:flex-row flex-1 min-h-[600px] lg:min-h-[calc(100vh-88px)]">
         
         {/* Left Side (Text) */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:pl-[80px] lg:pr-16 py-16 lg:py-0 z-20">
@@ -108,8 +98,8 @@ function HeroNav() {
           </div>
         </div>
 
-        {/* Right Side (Image matching exactly below navbar) */}
-        <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative z-10">
+        {/* Right Side (Image matching exactly below navbar, full height) */}
+        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 flex flex-col z-10">
           <img alt="Car keys hanging" className="absolute inset-0 object-cover w-full h-full" src={heroImg} />
         </div>
 
@@ -170,7 +160,6 @@ function ServicesSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-[1400px] mx-auto w-full">
           
-          {/* 2. Service Cards with Hover Effect Gradient */}
           <div className="group relative bg-white border border-gray-200 hover:border-gray-800 rounded-[14px] shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden">
              <div className="absolute inset-0 bg-[linear-gradient(146deg,#000_0%,#101828_50%,#000_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
              <div className="relative z-10 p-8 lg:p-10 flex flex-col gap-5">
@@ -242,7 +231,6 @@ function ServicesSection() {
 
 function TrustStrip() {
   return (
-    // 3. Trust Strip Background Gradient
     <div className="bg-[linear-gradient(172deg,#000_0%,#101828_50%,#000_100%)] border-y-4 border-[#c50101] py-16 w-full">
       <div className="w-full mx-auto px-6 lg:px-[80px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 max-w-[1600px]">
         <div className="flex flex-col items-center text-center gap-3">
@@ -339,7 +327,7 @@ function ReviewsSection() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full justify-center">
-          {/* 4. Review Cards Background Gradient */}
+          
           <div className="bg-[linear-gradient(136deg,#000_0%,#101828_50%,#000_100%)] p-8 lg:p-10 rounded-[16px] text-white flex-1 flex flex-col gap-6 shadow-xl border border-gray-800 hover:-translate-y-2 transition-transform duration-300">
             <div className="flex gap-1 text-[#FDCB02]">
               {[...Array(5)].map((_, i) => <Star key={i} size={24} weight="fill" />)}
@@ -437,6 +425,7 @@ function AboutSection() {
           <div className="border-4 border-[#c50101] rounded-[16px] overflow-hidden h-[400px] md:h-[600px] shadow-2xl relative">
             <img alt="About us locksmith working" className="object-cover w-full h-full absolute inset-0" src={aboutImg} />
           </div>
+          {/* Floating Badge */}
           <div className="absolute top-10 right-[-10px] md:right-[-30px] bg-white border-2 border-[#c50101] rounded-[12px] p-5 lg:p-6 shadow-2xl flex flex-col gap-1 z-10">
             <p className="text-[16px] text-gray-500 font-medium uppercase tracking-wider">Serving</p>
             <p className="font-bold text-[22px] md:text-[26px] text-black tracking-tight">Meath & Beyond</p>
