@@ -1,238 +1,29 @@
+import {
+  Phone, MapPin, FacebookLogo, Check, WhatsappLogo,
+  Key, DeviceMobile, LockOpen, Cpu, Car, Timer, Star, Wrench, Siren, Envelope
+} from "@phosphor-icons/react";
+
 import svgPaths from "./svg-3y9bx4m8zm";
 import heroImg from "../hero.png";
 import workImg from "../work.png";
 import aboutImg from "../about.png";
 
-function IconBase() {
-  return (
-    <div className="relative shrink-0 size-[20px]" data-name="IconBase">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-        <g clipPath="url(#clip0_6_1605)" id="IconBase" opacity="0.913184">
-          <g id="Vector" />
-          <path d={svgPaths.p3b5b6180} fill="var(--fill-0, white)" id="Vector_2" />
-        </g>
-        <defs>
-          <clipPath id="clip0_6_1605">
-            <rect fill="white" height="20" width="20" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-  );
-}
-
-function Container1() {
-  return (
-    <div className="relative shrink-0" data-name="Container">
-      <div className="flex gap-[12px] items-center relative size-full">
-        <IconBase />
-        <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[14px] md:text-[16px] text-white whitespace-normal">{`LOCKED OUT? WE'RE 20–30 MINUTES AWAY`}</p>
-      </div>
-    </div>
-  );
-}
-
-function IconBase1() {
-  return (
-    <div className="relative shrink-0 size-[20px]" data-name="IconBase">
-      <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 20 20">
-        <g clipPath="url(#clip0_6_1599)" id="IconBase">
-          <g id="Vector" />
-          <path d={svgPaths.p1678ab00} fill="var(--fill-0, white)" id="Vector_2" />
-        </g>
-        <defs>
-          <clipPath id="clip0_6_1599">
-            <rect fill="white" height="20" width="20" />
-          </clipPath>
-        </defs>
-      </svg>
-    </div>
-  );
-}
-
-function Link() {
-  return (
-    <div className="relative shrink-0" data-name="Link">
-      <div className="flex gap-[8px] items-center relative size-full">
-        <IconBase1 />
-        <p className="font-['Inter:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-white whitespace-nowrap">Call Now: 086 200 0066</p>
-      </div>
-    </div>
-  );
-}
-
-function Text() {
-  return (
-    <div className="hidden md:block relative shrink-0" data-name="Text">
-      <div className="flex items-start relative size-full">
-        <p className="font-['Inter:Regular',sans-serif] font-normal text-[14px] text-white whitespace-nowrap">Available 24/7</p>
-      </div>
-    </div>
-  );
-}
-
-function Container2() {
-  return (
-    <div className="relative shrink-0" data-name="Container">
-      <div className="flex gap-[16px] items-center relative size-full">
-        <Link />
-        <Text />
-      </div>
-    </div>
-  );
-}
-
-function Container() {
-  return (
-    <div className="flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between relative shrink-0 w-full max-w-7xl mx-auto" data-name="Container">
-      <Container1 />
-      <Container2 />
-    </div>
-  );
-}
-
 function EmergencyBar() {
   return (
-    <div className="bg-[#c50101] flex flex-col items-start px-4 md:px-[80px] py-[12px] relative shadow-md shrink-0 w-full" data-name="EmergencyBar">
-      <Container />
-    </div>
-  );
-}
-
-function Frame10() {
-  return (
-    <div className="hidden lg:block relative shrink-0">
-      <div className="flex font-['Inter:Medium',sans-serif] font-medium gap-[24px] items-center justify-center text-[16px] text-white whitespace-nowrap">
-        <p className="cursor-pointer hover:text-gray-300">Home</p>
-        <p className="cursor-pointer hover:text-gray-300">About</p>
-        <p className="cursor-pointer hover:text-gray-300">Contact</p>
+    <div className="bg-[#c50101] flex flex-col md:flex-row gap-4 md:gap-0 items-center justify-between px-4 md:px-[80px] py-[12px] w-full z-30 relative shadow-md">
+      <div className="flex gap-[12px] items-center">
+        <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[14px] md:text-[16px] text-white whitespace-normal">
+          {`LOCKED OUT? WE'RE 20–30 MINUTES AWAY`}
+        </p>
       </div>
-    </div>
-  );
-}
-
-function Link1() {
-  return (
-    <div className="relative shrink-0" data-name="Link">
-      <div className="flex gap-[8px] items-center relative size-full">
-        <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#fdfdfd] text-[16px] whitespace-nowrap">086 200 0066</p>
-      </div>
-    </div>
-  );
-}
-
-function Container5() {
-  return (
-    <div className="hidden md:flex relative shrink-0" data-name="Container">
-      <div className="flex gap-[8px] items-center relative size-full">
-        <p className="font-['Inter:Regular',sans-serif] font-normal text-[#fdfdfd] text-[14px] whitespace-nowrap">Serving Meath</p>
-      </div>
-    </div>
-  );
-}
-
-function Container4() {
-  return (
-    <div className="relative shrink-0" data-name="Container">
-      <div className="flex gap-[16px] md:gap-[24px] items-center relative size-full">
-        <Link1 />
-        <Container5 />
-      </div>
-    </div>
-  );
-}
-
-function Container3() {
-  return (
-    <div className="flex flex-wrap gap-4 items-center justify-between relative shrink-0 w-full max-w-7xl mx-auto" data-name="Container">
-      <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px] text-white whitespace-nowrap">Navan Car Keys Locksmiths</p>
-      <Frame10 />
-      <Container4 />
-    </div>
-  );
-}
-
-function Navbar() {
-  return (
-    <div className="flex flex-col py-4 px-4 md:px-[80px] relative shadow-md w-full" data-name="Navbar">
-      <Container3 />
-    </div>
-  );
-}
-
-function Container7() {
-  return (
-    <div className="flex flex-col gap-4 items-start relative shrink-0 w-full" data-name="Container">
-      <div className="flex gap-3 items-center relative shrink-0 w-full">
-        <p className="font-['Inter:Regular',sans-serif] font-normal text-[16px] md:text-[18px] text-white">✓ 24/7 Emergency Response</p>
-      </div>
-      <div className="flex gap-3 items-center relative shrink-0 w-full">
-        <p className="font-['Inter:Regular',sans-serif] font-normal text-[16px] md:text-[18px] text-white">✓ Mobile Service (We Come to You)</p>
-      </div>
-      <div className="flex gap-3 items-center relative shrink-0 w-full">
-        <p className="font-['Inter:Regular',sans-serif] font-normal text-[16px] md:text-[18px] text-white">✓ All Car Makes & Models</p>
-      </div>
-    </div>
-  );
-}
-
-function Link3() {
-  return (
-    <div className="bg-[#c50101] relative rounded-[12px] shadow-md shrink-0 w-full sm:w-auto cursor-pointer" data-name="Link">
-      <div className="flex gap-[8px] justify-center items-center px-6 py-4 relative size-full">
-        <p className="font-['Inter:Bold',sans-serif] font-bold text-[16px] md:text-[18px] text-white whitespace-nowrap">CALL NOW – 086 200 0066</p>
-      </div>
-    </div>
-  );
-}
-
-function Link4() {
-  return (
-    <div className="bg-white relative rounded-[12px] shrink-0 w-full sm:w-auto cursor-pointer" data-name="Link">
-      <div className="flex gap-[8px] justify-center items-center px-6 py-4 relative size-full">
-        <p className="font-['Inter:Bold',sans-serif] font-bold text-[16px] md:text-[18px] text-black whitespace-nowrap">WHATSAPP US</p>
-      </div>
-    </div>
-  );
-}
-
-function Container11() {
-  return (
-    <div className="flex flex-col sm:flex-row gap-4 items-start relative shrink-0 w-full" data-name="Container">
-      <Link3 />
-      <Link4 />
-    </div>
-  );
-}
-
-function Container6() {
-  return (
-    <div className="flex flex-col gap-[28px] items-start relative shrink-0 w-full lg:w-1/2" data-name="Container">
-      <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[#fdfdfd] text-[20px] md:text-[24px] w-full">Mobile Locksmith</p>
-      <p className="font-['Inter:Bold',sans-serif] font-bold text-white w-full leading-tight text-[40px] md:text-[60px] lg:text-[70px]">
-        Lost Your Car Keys or <span className="text-[#c50101]">Locked Out?</span>
-      </p>
-      <p className="font-['Inter:Regular',sans-serif] font-normal text-[#d1d5dc] text-[18px] md:text-[24px] w-full max-w-lg">We come to you anywhere in Meath, fast, reliable, no damage.</p>
-      <Container7 />
-      <Container11 />
-    </div>
-  );
-}
-
-function Frame() {
-  return (
-    <div className="h-[300px] sm:h-[400px] lg:h-[800px] relative shrink-0 w-full lg:w-1/2 rounded-2xl overflow-hidden mt-8 lg:mt-0">
-      <img alt="" className="absolute inset-0 object-cover size-full" src={heroImg} />
-    </div>
-  );
-}
-
-function Hero() {
-  return (
-    <div className="relative w-full max-w-7xl mx-auto" data-name="Hero">
-      <div className="flex flex-col lg:flex-row items-center justify-between size-full px-4 md:px-[80px] py-[40px] lg:py-[100px]">
-        <Container6 />
-        <Frame />
+      <div className="flex gap-[16px] items-center">
+        <div className="flex gap-[8px] items-center">
+          <Phone size={20} weight="fill" className="text-white" />
+          <p className="font-['Inter:Bold',sans-serif] font-bold text-[14px] md:text-[16px] text-white whitespace-nowrap">Call Now: 086 200 0066</p>
+        </div>
+        <div className="hidden md:flex items-start">
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[14px] text-white whitespace-nowrap">Available 24/7</p>
+        </div>
       </div>
     </div>
   );
@@ -240,9 +31,79 @@ function Hero() {
 
 function HeroNav() {
   return (
-    <div className="flex flex-col min-h-screen items-start relative w-full bg-gradient-to-br from-black via-gray-900 to-black" data-name="Hero + Nav">
-      <Navbar />
-      <Hero />
+    <div className="relative w-full min-h-screen bg-[#0A0F1A] flex flex-col lg:flex-row overflow-hidden" data-name="Hero + Nav">
+      
+      {/* Navbar Overlay */}
+      <div className="absolute top-0 left-0 w-full z-20 flex flex-col md:flex-row items-center justify-between px-6 lg:px-[80px] py-6 gap-4 md:gap-0">
+        <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px] text-white whitespace-nowrap">
+          Navan Car Keys Locksmiths
+        </p>
+        
+        <div className="hidden lg:flex font-['Inter:Medium',sans-serif] font-medium gap-8 items-center text-[15px] text-white">
+          <p className="cursor-pointer hover:text-gray-300 transition">Home</p>
+          <p className="cursor-pointer hover:text-gray-300 transition">About</p>
+          <p className="cursor-pointer hover:text-gray-300 transition">Contact</p>
+        </div>
+        
+        <div className="flex gap-6 items-center">
+          <div className="flex gap-2 items-center text-white">
+            <Phone size={20} weight="fill" />
+            <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-[15px]">086 200 0066</p>
+          </div>
+          <div className="hidden sm:flex gap-2 items-center text-white">
+            <MapPin size={20} weight="fill" />
+            <p className="font-['Inter:Regular',sans-serif] font-normal text-[14px]">Serving Meath</p>
+          </div>
+          <FacebookLogo size={24} weight="fill" className="text-white cursor-pointer hover:text-gray-300 transition" />
+        </div>
+      </div>
+
+      {/* Hero Left Content */}
+      <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:px-[80px] pt-40 lg:pt-0 pb-12 z-10">
+        <div className="max-w-lg flex flex-col gap-6">
+          <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold text-white text-[18px] md:text-[20px]">
+            Mobile Locksmith
+          </p>
+          <h1 className="font-['Inter:Bold',sans-serif] font-bold text-white leading-[1.1] text-[48px] md:text-[64px] lg:text-[72px]">
+            Lost Your Car<br />Keys or <span className="text-[#c50101]">Locked<br />Out?</span>
+          </h1>
+          <p className="font-['Inter:Regular',sans-serif] font-normal text-[#d1d5dc] text-[16px] md:text-[18px] leading-relaxed max-w-md">
+            We come to you anywhere in Meath, fast, reliable, no damage.
+          </p>
+          
+          <div className="flex flex-col gap-4 mt-2">
+            <div className="flex gap-3 items-center">
+              <Check size={20} weight="bold" className="text-[#c50101]" />
+              <p className="font-['Inter:Regular',sans-serif] text-[16px] text-white">24/7 Emergency Response</p>
+            </div>
+            <div className="flex gap-3 items-center">
+              <Check size={20} weight="bold" className="text-[#c50101]" />
+              <p className="font-['Inter:Regular',sans-serif] text-[16px] text-white">Mobile Service (We Come to You)</p>
+            </div>
+            <div className="flex gap-3 items-center">
+              <Check size={20} weight="bold" className="text-[#c50101]" />
+              <p className="font-['Inter:Regular',sans-serif] text-[16px] text-white">All Car Makes & Models</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+            <div className="bg-[#c50101] rounded-[8px] shadow-lg cursor-pointer hover:bg-red-700 transition flex items-center justify-center gap-2 px-6 py-4">
+              <Phone size={20} weight="fill" className="text-white" />
+              <p className="font-['Inter:Bold',sans-serif] font-bold text-[15px] text-white whitespace-nowrap">CALL NOW – 086 200 0066</p>
+            </div>
+            <div className="bg-white rounded-[8px] shadow-lg cursor-pointer hover:bg-gray-100 transition flex items-center justify-center gap-2 px-6 py-4">
+              <WhatsappLogo size={22} weight="fill" className="text-black" />
+              <p className="font-['Inter:Bold',sans-serif] font-bold text-[15px] text-black whitespace-nowrap">WHATSAPP US</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hero Right Image */}
+      <div className="w-full lg:w-1/2 h-[400px] lg:h-screen relative shrink-0 bg-black">
+        <img alt="Car keys hanging" className="absolute inset-0 object-cover w-full h-full" src={heroImg} />
+      </div>
+      
     </div>
   );
 }
@@ -257,20 +118,20 @@ function EmergencySteps() {
         </div>
         
         <div className="flex flex-col lg:flex-row gap-8 w-full justify-center">
-          {/* Step 1 */}
           <div className="bg-[#fdfdfd] border-2 border-[#c50101] p-8 rounded-[14px] flex-1 flex flex-col items-center text-center gap-4">
             <div className="bg-[#c50101] w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-[12px] flex items-center justify-center text-white font-bold text-2xl md:text-3xl">1</div>
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px] text-black">Stay where you are</p>
             <p className="font-['Inter:Regular',sans-serif] font-normal text-[16px] md:text-[18px] text-gray-600">{`Don't panic. Note your exact location and keep safe.`}</p>
           </div>
-          {/* Step 2 */}
           <div className="bg-[#fdfdfd] border-2 border-[#c50101] p-8 rounded-[14px] flex-1 flex flex-col items-center text-center gap-4">
             <div className="bg-[#c50101] w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-[12px] flex items-center justify-center text-white font-bold text-2xl md:text-3xl">2</div>
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px] text-black">Call us immediately</p>
             <p className="font-['Inter:Regular',sans-serif] font-normal text-[16px] md:text-[18px] text-gray-600">{`We'll answer right away and get details about your situation.`}</p>
-            <div className="bg-[#c50101] px-4 py-2 rounded-[10px] text-white font-bold">086 200 0066</div>
+            <div className="bg-[#c50101] px-4 py-2 rounded-[10px] text-white font-bold flex items-center gap-2">
+              <Phone size={18} weight="fill" />
+              086 200 0066
+            </div>
           </div>
-          {/* Step 3 */}
           <div className="bg-[#fdfdfd] border-2 border-[#c50101] p-8 rounded-[14px] flex-1 flex flex-col items-center text-center gap-4">
             <div className="bg-[#c50101] w-[60px] h-[60px] md:w-[80px] md:h-[80px] rounded-[12px] flex items-center justify-center text-white font-bold text-2xl md:text-3xl">3</div>
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px] text-black">{`We'll be there in 20-30 minutes`}</p>
@@ -298,28 +159,38 @@ function ServicesSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="bg-gradient-to-br from-black via-gray-900 to-black border-2 border-black rounded-[14px] p-8 flex flex-col gap-4 text-white">
-             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center">🔑</div>
+          <div className="bg-gradient-to-br from-[#0A0F1A] to-black border-2 border-black rounded-[14px] p-8 flex flex-col gap-4 text-white shadow-xl">
+             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center">
+               <Key size={32} weight="fill" className="text-white" />
+             </div>
              <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px]">Car Key Replacement</p>
              <p className="text-gray-300">Lost your only key? We can create a new one on-site for all makes and models.</p>
           </div>
           <div className="bg-white rounded-[14px] p-8 flex flex-col gap-4 text-black shadow-sm">
-             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center text-white">🔑</div>
+             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center">
+               <Key size={32} weight="fill" className="text-white" />
+             </div>
              <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px]">Spare Car Keys</p>
              <p className="text-gray-600">Get a backup key made before disaster strikes. Quick and affordable.</p>
           </div>
           <div className="bg-white rounded-[14px] p-8 flex flex-col gap-4 text-black shadow-sm">
-             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center text-white">📱</div>
+             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center">
+               <DeviceMobile size={32} weight="fill" className="text-white" />
+             </div>
              <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px]">Key Fob Programming</p>
              <p className="text-gray-600">Remote not working? We program and sync key fobs to your vehicle.</p>
           </div>
           <div className="bg-white rounded-[14px] p-8 flex flex-col gap-4 text-black shadow-sm">
-             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center text-white">🔓</div>
+             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center">
+               <LockOpen size={32} weight="fill" className="text-white" />
+             </div>
              <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px]">Emergency Lockout</p>
              <p className="text-gray-600">{`Locked your keys in the car? We'll get you back in without damage.`}</p>
           </div>
           <div className="bg-white rounded-[14px] p-8 flex flex-col gap-4 text-black shadow-sm">
-             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center text-white">💻</div>
+             <div className="bg-[#c50101] w-16 h-16 rounded-[10px] flex items-center justify-center">
+               <Cpu size={32} weight="fill" className="text-white" />
+             </div>
              <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px]">ECU Tuning & Remapping</p>
              <p className="text-gray-600">Performance tuning and engine management programming services available.</p>
           </div>
@@ -327,7 +198,10 @@ function ServicesSection() {
 
         <div className="text-center mt-4 flex flex-col md:flex-row items-center justify-center gap-4">
           <p className="font-['Inter:Medium',sans-serif] font-medium text-[16px] md:text-[18px] text-[#303030]">{`Not sure what you need? Call us and we'll advise you.`}</p>
-          <div className="bg-[#c50101] px-6 py-3 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition">086 200 0066</div>
+          <div className="bg-[#c50101] px-6 py-3 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition flex items-center gap-2">
+            <Phone size={20} weight="fill" />
+            086 200 0066
+          </div>
         </div>
       </div>
     </div>
@@ -336,25 +210,25 @@ function ServicesSection() {
 
 function TrustStrip() {
   return (
-    <div className="bg-gradient-to-br from-black via-gray-900 to-black border-y-4 border-[#c50101] py-12 w-full">
+    <div className="bg-gradient-to-br from-[#0A0F1A] to-black border-y-4 border-[#c50101] py-12 w-full">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div className="flex flex-col items-center text-center gap-2">
-          <div className="text-[#c50101] text-4xl mb-2">🚗</div>
+        <div className="flex flex-col items-center text-center gap-3">
+          <Car size={48} weight="fill" className="text-[#c50101]" />
           <p className="font-['Inter:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-white">100% Mobile Service</p>
           <p className="font-['Inter:Regular',sans-serif] text-gray-400">We come to you</p>
         </div>
-        <div className="flex flex-col items-center text-center gap-2">
-          <div className="text-[#c50101] text-4xl mb-2">⏱️</div>
+        <div className="flex flex-col items-center text-center gap-3">
+          <Timer size={48} weight="fill" className="text-[#c50101]" />
           <p className="font-['Inter:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-white">Fast Response Time</p>
           <p className="font-['Inter:Regular',sans-serif] text-gray-400">20-30 minute arrival</p>
         </div>
-        <div className="flex flex-col items-center text-center gap-2">
-          <div className="text-[#c50101] text-4xl mb-2">⭐</div>
+        <div className="flex flex-col items-center text-center gap-3">
+          <Star size={48} weight="fill" className="text-[#c50101]" />
           <p className="font-['Inter:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-white">5-Star Rated</p>
           <p className="font-['Inter:Regular',sans-serif] text-gray-400">Trusted by locals</p>
         </div>
-        <div className="flex flex-col items-center text-center gap-2">
-          <div className="text-[#c50101] text-4xl mb-2">🛠️</div>
+        <div className="flex flex-col items-center text-center gap-3">
+          <Wrench size={48} weight="fill" className="text-[#c50101]" />
           <p className="font-['Inter:Bold',sans-serif] font-bold text-[18px] md:text-[20px] text-white">Expert Technicians</p>
           <p className="font-['Inter:Regular',sans-serif] text-gray-400">Fully qualified</p>
         </div>
@@ -386,9 +260,15 @@ function ProofSection() {
           <div className="p-6 md:p-8 flex flex-col gap-4">
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[20px] md:text-[24px] text-white">Seat Ibiza Key Replacement</p>
             <p className="font-['Inter:Regular',sans-serif] text-gray-300">Customer needed a spare key, completed in minutes. No need to visit a dealership, we came to them at home.</p>
-            <div className="flex flex-col sm:flex-row gap-4 mt-2">
-              <span className="text-gray-400 text-sm">📍 Navan, Co. Meath</span>
-              <span className="text-gray-400 text-sm">⏱️ Completed in 25 minutes</span>
+            <div className="flex flex-col sm:flex-row gap-6 mt-2">
+              <div className="flex items-center gap-2">
+                <MapPin size={18} weight="fill" className="text-gray-400" />
+                <span className="text-gray-400 text-sm">Navan, Co. Meath</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Timer size={18} weight="fill" className="text-gray-400" />
+                <span className="text-gray-400 text-sm">Completed in 25 minutes</span>
+              </div>
             </div>
           </div>
         </div>
@@ -420,34 +300,58 @@ function ReviewsSection() {
           <p className="font-['Inter:Bold',sans-serif] font-bold text-[28px] md:text-[48px] text-black mb-4">
             {`Trusted by Drivers Across `} <span className="text-[#c50101]">Meath</span>
           </p>
-          <div className="flex justify-center gap-2 text-[#FDCB02] text-2xl">
-            ⭐⭐⭐⭐⭐
+          <div className="flex justify-center gap-1 text-[#FDCB02]">
+            {[...Array(5)].map((_, i) => <Star key={i} size={28} weight="fill" />)}
           </div>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 w-full justify-center">
-          <div className="bg-gradient-to-br from-black via-gray-900 to-black p-8 rounded-[14px] text-white flex-1 flex flex-col gap-4 shadow-xl border border-gray-800">
-            <div className="text-[#FDCB02]">⭐⭐⭐⭐⭐</div>
-            <p className="font-['Inter:Regular',sans-serif] text-gray-300 flex-1 italic">{`"Lost my key at the shopping centre and they sorted it fast, highly recommend! Friendly service and fair pricing."`}</p>
-            <div className="border-t border-gray-700 pt-4 mt-2">
-              <p className="font-bold">Sarah M.</p>
-              <p className="text-sm text-gray-400">Navan</p>
+          {/* Review 1 */}
+          <div className="bg-gradient-to-br from-[#0A0F1A] to-black p-8 rounded-[14px] text-white flex-1 flex flex-col gap-6 shadow-xl border border-gray-800">
+            <div className="flex gap-1 text-[#FDCB02]">
+              {[...Array(5)].map((_, i) => <Star key={i} size={20} weight="fill" />)}
+            </div>
+            <p className="font-['Inter:Regular',sans-serif] text-gray-300 flex-1 italic leading-relaxed">{`"Lost my key at the shopping centre and they sorted it fast, highly recommend! Friendly service and fair pricing."`}</p>
+            <div className="border-t border-gray-700 pt-4 mt-2 flex justify-between items-end">
+              <div>
+                <p className="font-bold">Sarah M.</p>
+                <div className="flex items-center gap-2 mt-1">
+                  <MapPin size={14} weight="fill" className="text-gray-400" />
+                  <p className="text-sm text-gray-400">Navan</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-black via-gray-900 to-black p-8 rounded-[14px] text-white flex-1 flex flex-col gap-4 shadow-xl border border-gray-800">
-            <div className="text-[#FDCB02]">⭐⭐⭐⭐⭐</div>
-            <p className="font-['Inter:Regular',sans-serif] text-gray-300 flex-1 italic">{`"Locked my keys in the car outside work. They arrived in 20 minutes and got me back in without any damage. Lifesavers!"`}</p>
-            <div className="border-t border-gray-700 pt-4 mt-2">
-              <p className="font-bold">John D.</p>
-              <p className="text-sm text-gray-400">Trim</p>
+          {/* Review 2 */}
+          <div className="bg-gradient-to-br from-[#0A0F1A] to-black p-8 rounded-[14px] text-white flex-1 flex flex-col gap-6 shadow-xl border border-gray-800">
+            <div className="flex gap-1 text-[#FDCB02]">
+              {[...Array(5)].map((_, i) => <Star key={i} size={20} weight="fill" />)}
+            </div>
+            <p className="font-['Inter:Regular',sans-serif] text-gray-300 flex-1 italic leading-relaxed">{`"Locked my keys in the car outside work. They arrived in 20 minutes and got me back in without any damage. Lifesavers!"`}</p>
+            <div className="border-t border-gray-700 pt-4 mt-2 flex justify-between items-end">
+              <div>
+                <p className="font-bold">John D.</p>
+                <div className="flex items-center gap-2 mt-1">
+                  <MapPin size={14} weight="fill" className="text-gray-400" />
+                  <p className="text-sm text-gray-400">Trim</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-black via-gray-900 to-black p-8 rounded-[14px] text-white flex-1 flex flex-col gap-4 shadow-xl border border-gray-800">
-            <div className="text-[#FDCB02]">⭐⭐⭐⭐⭐</div>
-            <p className="font-['Inter:Regular',sans-serif] text-gray-300 flex-1 italic">{`"Needed a spare key for my VW Golf. Came to my house and programmed it on the spot. Much cheaper than the dealer!"`}</p>
-            <div className="border-t border-gray-700 pt-4 mt-2">
-              <p className="font-bold">Emma K.</p>
-              <p className="text-sm text-gray-400">Kells</p>
+          {/* Review 3 */}
+          <div className="bg-gradient-to-br from-[#0A0F1A] to-black p-8 rounded-[14px] text-white flex-1 flex flex-col gap-6 shadow-xl border border-gray-800">
+            <div className="flex gap-1 text-[#FDCB02]">
+              {[...Array(5)].map((_, i) => <Star key={i} size={20} weight="fill" />)}
+            </div>
+            <p className="font-['Inter:Regular',sans-serif] text-gray-300 flex-1 italic leading-relaxed">{`"Needed a spare key for my VW Golf. Came to my house and programmed it on the spot. Much cheaper than the dealer!"`}</p>
+            <div className="border-t border-gray-700 pt-4 mt-2 flex justify-between items-end">
+              <div>
+                <p className="font-bold">Emma K.</p>
+                <div className="flex items-center gap-2 mt-1">
+                  <MapPin size={14} weight="fill" className="text-gray-400" />
+                  <p className="text-sm text-gray-400">Kells</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -470,38 +374,44 @@ function AboutSection() {
           </p>
           <p className="text-[#364153] text-[16px] md:text-[20px]">{`We're a mobile locksmith service based in Navan, serving Meath and surrounding areas. We specialize in car keys, emergency lockouts, and key fob programming.`}</p>
           
-          <div className="flex flex-col gap-6 mt-4">
+          <div className="flex flex-col gap-8 mt-6">
             <div className="flex gap-4 items-start">
-              <div className="bg-[#c50101] w-12 h-12 rounded-lg shrink-0 flex items-center justify-center text-white text-xl">🚘</div>
+              <div className="bg-[#c50101] w-12 h-12 rounded-lg shrink-0 flex items-center justify-center">
+                <Car size={24} weight="fill" className="text-white" />
+              </div>
               <div>
                 <p className="font-bold text-[18px] text-black">All Car Brands</p>
-                <p className="text-gray-600 mt-1">From Ford to Mercedes, we work with all makes and models. Modern key fobs, transponders, and traditional keys.</p>
+                <p className="text-gray-600 mt-1 leading-relaxed">From Ford to Mercedes, we work with all makes and models. Modern key fobs, transponders, and traditional keys.</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
-              <div className="bg-[#c50101] w-12 h-12 rounded-lg shrink-0 flex items-center justify-center text-white text-xl">⭐</div>
+              <div className="bg-[#c50101] w-12 h-12 rounded-lg shrink-0 flex items-center justify-center">
+                <Star size={24} weight="fill" className="text-white" />
+              </div>
               <div>
                 <p className="font-bold text-[18px] text-black">Years of Experience</p>
-                <p className="text-gray-600 mt-1">Fully trained and insured technicians with extensive experience in automotive locksmithing.</p>
+                <p className="text-gray-600 mt-1 leading-relaxed">Fully trained and insured technicians with extensive experience in automotive locksmithing.</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
-              <div className="bg-[#c50101] w-12 h-12 rounded-lg shrink-0 flex items-center justify-center text-white text-xl">🚨</div>
+              <div className="bg-[#c50101] w-12 h-12 rounded-lg shrink-0 flex items-center justify-center">
+                <Siren size={24} weight="fill" className="text-white" />
+              </div>
               <div>
                 <p className="font-bold text-[18px] text-black">Emergency Ready</p>
-                <p className="text-gray-600 mt-1">{`Available 24/7 for emergencies. We understand that lockouts don't happen at convenient times.`}</p>
+                <p className="text-gray-600 mt-1 leading-relaxed">{`Available 24/7 for emergencies. We understand that lockouts don't happen at convenient times.`}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex-1 w-full relative">
+        <div className="flex-1 w-full relative mt-8 lg:mt-0">
           <div className="border-4 border-[#c50101] rounded-[14px] overflow-hidden h-[400px] md:h-[600px] shadow-xl relative">
-            <img alt="About us" className="object-cover size-full" src={aboutImg} />
+            <img alt="About us locksmith working" className="object-cover size-full absolute inset-0" src={aboutImg} />
           </div>
           {/* Floating Badge */}
-          <div className="absolute top-10 right-[-10px] md:right-[-20px] bg-white border-2 border-[#c50101] rounded-lg p-4 shadow-lg">
-            <p className="text-sm text-gray-600">Serving</p>
+          <div className="absolute top-10 right-[-10px] md:right-[-20px] bg-white border-2 border-[#c50101] rounded-lg p-4 shadow-lg flex flex-col gap-1">
+            <p className="text-sm text-gray-600 font-medium">Serving</p>
             <p className="font-bold text-[18px] md:text-[22px] text-black">Meath & Beyond</p>
           </div>
         </div>
@@ -512,28 +422,30 @@ function AboutSection() {
 
 function FinalCta() {
   return (
-    <div className="bg-gradient-to-br from-red-800 to-[#5F0000] w-full" data-name="Final CTA">
-      <div className="max-w-7xl mx-auto px-4 md:px-[80px] py-[80px] md:py-[120px] flex flex-col items-center justify-center text-center gap-8">
-        <p className="font-['Inter:Bold',sans-serif] font-bold text-[36px] md:text-[60px] text-white leading-tight">Locked Out or Lost Your Keys?</p>
+    <div className="bg-gradient-to-br from-[#A00000] to-[#5F0000] w-full relative overflow-hidden" data-name="Final CTA">
+      <div className="max-w-7xl mx-auto px-4 md:px-[80px] py-[80px] md:py-[120px] flex flex-col items-center justify-center text-center gap-8 relative z-10">
+        <h2 className="font-['Inter:Bold',sans-serif] font-bold text-[36px] md:text-[60px] text-white leading-tight">Locked Out or Lost Your Keys?</h2>
         <p className="font-['Inter:Medium',sans-serif] font-medium text-[20px] md:text-[30px] text-white">{`We're on the way, call now and get back on the road fast.`}</p>
         
-        <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
-          <div className="bg-white rounded-[14px] shadow-xl px-8 py-4 cursor-pointer hover:bg-gray-100 transition flex items-center justify-center gap-3">
-             <span className="text-[#dc0000] text-xl">📞</span>
-             <p className="font-bold text-[#dc0000] text-[18px] md:text-[20px]">CALL NOW: 086 200 0066</p>
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto">
+          <div className="bg-white rounded-[10px] shadow-xl px-8 py-4 cursor-pointer hover:bg-gray-100 transition flex items-center justify-center gap-3">
+             <Phone size={24} weight="fill" className="text-[#dc0000]" />
+             <p className="font-['Inter:Bold',sans-serif] font-bold text-[#dc0000] text-[18px] md:text-[20px] whitespace-nowrap">CALL NOW: 086 200 0066</p>
           </div>
-          <div className="bg-black/30 border border-white/50 rounded-[14px] px-8 py-4 cursor-pointer hover:bg-black/50 transition flex items-center justify-center gap-3">
-             <span className="text-white text-xl">💬</span>
-             <p className="font-bold text-white text-[18px] md:text-[20px]">WHATSAPP US</p>
+          <div className="bg-black/30 border border-white/30 rounded-[10px] px-8 py-4 cursor-pointer hover:bg-black/50 transition flex items-center justify-center gap-3">
+             <WhatsappLogo size={24} weight="fill" className="text-white" />
+             <p className="font-['Inter:Bold',sans-serif] font-bold text-white text-[18px] md:text-[20px] whitespace-nowrap">WHATSAPP US</p>
           </div>
         </div>
 
-        <div className="bg-white/10 px-6 py-3 rounded-[10px] flex items-center gap-2 mt-4">
-          <span className="text-white text-lg">⏱️</span>
+        <div className="bg-white/10 border border-white/20 px-6 py-4 rounded-[10px] flex items-center gap-3 mt-4">
+          <Timer size={24} weight="fill" className="text-white" />
           <p className="text-white text-[16px] md:text-[18px]">{`Average Response Time: `} <span className="font-bold">20-30 Minutes</span></p>
         </div>
 
-        <p className="text-white/70 text-sm mt-4">{`Available 24/7 • Mobile Service • All Car Makes & Models`}</p>
+        <p className="text-white/70 text-[14px] md:text-[16px] mt-4 font-medium tracking-wide">
+          {`Available 24/7 • Mobile Service • All Car Makes & Models`}
+        </p>
       </div>
     </div>
   );
@@ -541,56 +453,69 @@ function FinalCta() {
 
 function Footer() {
   return (
-    <div className="bg-black border-t-4 border-[#c50101] w-full" data-name="Footer">
-      <div className="max-w-7xl mx-auto px-4 md:px-[80px] py-12 md:py-16 flex flex-col gap-12">
-        <div className="flex flex-col lg:flex-row gap-12 justify-between w-full">
+    <div className="bg-[#0A0F1A] border-t-4 border-[#c50101] w-full" data-name="Footer">
+      <div className="max-w-7xl mx-auto px-6 md:px-[80px] py-12 md:py-16 flex flex-col gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-between w-full">
           {/* Col 1 */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[#c50101] text-[20px] md:text-[24px]">Navan Car Keys Locksmiths</p>
-            <div className="flex flex-col gap-2 text-white">
-              <p>📞 086 200 0066</p>
-              <p>✉️ navancarkeys@gmail.com</p>
-              <p>📍 Meath</p>
+            <div className="flex flex-col gap-4 text-white">
+              <div className="flex items-center gap-3">
+                <Phone size={20} weight="fill" className="text-gray-400" />
+                <p>086 200 0066</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Envelope size={20} weight="fill" className="text-gray-400" />
+                <p>navancarkeys@gmail.com</p>
+              </div>
+              <div className="flex items-center gap-3">
+                <MapPin size={20} weight="fill" className="text-gray-400" />
+                <p>Meath, Ireland</p>
+              </div>
             </div>
           </div>
           {/* Col 2 */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[#c50101] text-[20px]">Service Areas</p>
-            <div className="flex gap-8 text-gray-300">
-              <div className="flex flex-col gap-2">
+            <div className="flex gap-12 text-gray-300">
+              <div className="flex flex-col gap-3">
                 <p>Navan</p>
                 <p>Kells</p>
                 <p>Dunshaughlin</p>
                 <p>Slane</p>
               </div>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-3">
                 <p>Trim</p>
                 <p>Athboy</p>
                 <p>Ashbourne</p>
                 <p>Ratoath</p>
               </div>
             </div>
-            <p className="text-gray-500 text-sm mt-2">+ surrounding areas</p>
+            <p className="text-gray-500 text-sm mt-2 italic">+ surrounding areas</p>
           </div>
           {/* Col 3 */}
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <p className="font-['Inter:Bold',sans-serif] font-bold text-[#c50101] text-[20px]">Our Services</p>
-            <div className="flex flex-col gap-2 text-gray-300">
+            <div className="flex flex-col gap-3 text-gray-300">
               <p>• Car Key Replacement</p>
               <p>• Spare Car Keys</p>
               <p>• Key Fob Programming</p>
               <p>• Emergency Lockout</p>
               <p>• ECU Tuning & Remapping</p>
             </div>
-            <div className="mt-4 flex items-center gap-2 text-white cursor-pointer hover:text-blue-400">
-              <span>🔵</span> Follow us on Facebook
+            <div className="mt-6 flex items-center gap-3 text-white cursor-pointer hover:text-blue-400 transition">
+              <FacebookLogo size={28} weight="fill" /> 
+              <span className="font-medium">Follow us on Facebook</span>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 pt-8 flex flex-col items-center gap-4 text-center">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <p className="text-gray-400 text-sm">© 2026 Navan Car Keys Locksmiths. All rights reserved.</p>
-          <p className="text-gray-500 text-sm">Fully Insured • Licensed • Professional Service</p>
+          <div className="flex items-center gap-2 text-gray-500 text-sm">
+            <Check size={16} weight="bold" />
+            <p>Fully Insured • Licensed • Professional Service</p>
+          </div>
         </div>
       </div>
     </div>
