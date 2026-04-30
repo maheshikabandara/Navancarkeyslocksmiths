@@ -9,11 +9,9 @@ import heroImg from "../hero.png";
 import workImg from "../work.png";
 import aboutImg from "../about.png";
 
-// 1. Sticky Header Component (Always visible)
 function FixedHeader() {
   return (
     <header className="fixed top-0 left-0 w-full z-[100] shadow-xl flex flex-col">
-      {/* Emergency Top Bar */}
       <div className="bg-[#c50101] w-full">
         <div className="w-full mx-auto px-6 py-[12px] flex items-center justify-center text-center">
           <p className="font-semibold text-[14px] md:text-[16px] text-white tracking-wide">
@@ -22,7 +20,6 @@ function FixedHeader() {
         </div>
       </div>
 
-      {/* Solid Navbar Area */}
       <div className="w-full bg-[#0A0F1A] border-b border-white/5">
         <div className="w-full mx-auto px-6 lg:px-[80px] py-4 md:py-5 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
           <p className="font-bold text-[20px] md:text-[26px] text-white whitespace-nowrap tracking-tight">
@@ -36,7 +33,6 @@ function FixedHeader() {
           </div>
           
           <div className="flex gap-5 md:gap-6 items-center">
-            {/* Highlighted Red Call Button */}
             <a href="tel:0862000066" className="bg-[#c50101] hover:bg-red-700 transition-colors duration-300 px-5 py-2.5 rounded-[8px] flex gap-2 items-center text-white cursor-pointer shadow-lg">
               <Phone size={22} weight="fill" className="animate-pulse" />
               <p className="font-bold text-[15px] md:text-[16px] whitespace-nowrap">086 200 0066</p>
@@ -59,11 +55,9 @@ function HeroSection() {
     <div className="w-full flex flex-col bg-[linear-gradient(146deg,#000_0%,#101828_50%,#000_100%)]" data-name="Hero">
       <div className="w-full flex flex-col lg:flex-row flex-1 min-h-[600px] lg:min-h-[calc(100vh-130px)]">
         
-        {/* Left Side (Text & Urgency) */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:pl-[80px] lg:pr-16 py-16 lg:py-0 z-20">
           <div className="max-w-[650px] flex flex-col gap-5 mt-4">
             
-            {/* Urgency Badge */}
             <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 px-4 py-2 rounded-full w-fit">
               <Siren size={20} weight="fill" className="text-red-500" />
               <p className="font-semibold text-white text-[14px] md:text-[16px] tracking-wide">
@@ -71,12 +65,12 @@ function HeroSection() {
               </p>
             </div>
 
+            {/* Changed Hero Heading */}
             <h1 className="font-bold text-white leading-[1.1] text-[48px] md:text-[60px] lg:text-[72px] tracking-tight">
-              Lost Your Car<br />Keys or <span className="text-[#c50101]">Locked<br />Out?</span>
+              Locked out?<br />We're on the way in <span className="text-[#c50101]">minutes.</span>
             </h1>
             
             <p className="font-normal text-[#d1d5dc] text-[16px] md:text-[20px] leading-relaxed mt-2">
-              <span className="font-bold text-white text-[18px] md:text-[22px]">Locked out? We're on the way in minutes.</span><br className="mb-2 hidden sm:block"/>
               Fast response and on-site quickly for emergency callouts anywhere in Meath, Navan & surrounding areas.
             </p>
             
@@ -102,7 +96,6 @@ function HeroSection() {
               </div>
             </div>
 
-            {/* Trust Signals Under Buttons */}
             <div className="flex items-center gap-3 mt-4">
               <div className="flex gap-1 text-[#FDCB02]">
                 <Star size={20} weight="fill" />
@@ -119,7 +112,6 @@ function HeroSection() {
           </div>
         </div>
 
-        {/* Right Side (Image matching exactly below navbar) */}
         <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 flex flex-col z-10 bg-black border-l-4 border-[#c50101] lg:border-none">
           <img alt="Car keys hanging" className="absolute inset-0 object-cover w-full h-full opacity-90" src={heroImg} />
         </div>
@@ -134,10 +126,8 @@ function EmergencySteps() {
     <div className="bg-white py-16 lg:py-24 w-full" data-name="Emergency Steps">
       <div className="w-full max-w-[1600px] mx-auto px-6 lg:px-[80px] flex flex-col gap-12 lg:gap-16">
         
-        {/* Split Layout */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-start">
           
-          {/* Left Side: Heading & Banner */}
           <div className="w-full lg:w-1/2 flex flex-col pt-4 lg:pt-12">
             <h2 className="font-bold text-[36px] md:text-[48px] lg:text-[56px] text-black leading-[1.2] tracking-tight">
               Locked Out?<br />Follow These 3 Steps
@@ -146,7 +136,6 @@ function EmergencySteps() {
               We'll guide you through this, stay calm, we're here to help
             </p>
 
-            {/* Added Banner: "This is what we do..." */}
             <div className="bg-[#c50101] rounded-[12px] w-full p-5 lg:p-6 flex items-center justify-center md:justify-start gap-4 shadow-lg mt-10">
               <ShieldCheck size={32} weight="fill" className="text-white hidden sm:block shrink-0" />
               <p className="font-semibold text-[18px] md:text-[20px] text-white text-center md:text-left">
@@ -155,10 +144,8 @@ function EmergencySteps() {
             </div>
           </div>
 
-          {/* Right Side: Step Cards */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6">
             
-            {/* Step 1 */}
             <div className="bg-white border-[2px] border-[#c50101] p-6 md:p-8 rounded-[12px] flex flex-col sm:flex-row items-start sm:items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-[#c50101] w-[60px] h-[60px] shrink-0 rounded-[8px] flex items-center justify-center text-white font-bold text-3xl">
                 1
@@ -169,7 +156,6 @@ function EmergencySteps() {
               </div>
             </div>
 
-            {/* Step 2 */}
             <div className="bg-white border-[2px] border-[#c50101] p-6 md:p-8 rounded-[12px] flex flex-col sm:flex-row items-start sm:items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-[#c50101] w-[60px] h-[60px] shrink-0 rounded-[8px] flex items-center justify-center text-white font-bold text-3xl">
                 2
@@ -180,7 +166,6 @@ function EmergencySteps() {
               </div>
             </div>
 
-            {/* Step 3 */}
             <div className="bg-white border-[2px] border-[#c50101] p-6 md:p-8 rounded-[12px] flex flex-col sm:flex-row items-start sm:items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-[#c50101] w-[60px] h-[60px] shrink-0 rounded-[8px] flex items-center justify-center text-white font-bold text-3xl">
                 3
@@ -271,10 +256,10 @@ function ServicesSection() {
 
         <div className="text-center mt-4 flex flex-col md:flex-row items-center justify-center gap-6">
           <p className="font-medium text-[18px] md:text-[20px] text-gray-800">{`Not sure what you need? Call us and we'll advise you.`}</p>
-          <a href="tel:0862000066" className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
+          <div className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
             <Phone size={24} weight="fill" />
             086 200 0066
-          </a>
+          </div>
         </div>
       </div>
     </div>
@@ -492,11 +477,18 @@ function AboutSection() {
 function FinalCta() {
   return (
     <div className="bg-gradient-to-br from-[#8B0000] to-[#4A0000] w-full relative overflow-hidden" data-name="Final CTA">
-      <div className="w-full mx-auto px-6 lg:px-[80px] py-[80px] md:py-[140px] flex flex-col items-center justify-center text-center gap-8 relative z-10 max-w-[1600px]">
+      <div className="w-full mx-auto px-6 lg:px-[80px] py-[80px] md:py-[140px] flex flex-col items-center justify-center text-center gap-6 relative z-10 max-w-[1600px]">
+        
+        {/* MOVED UP & PADDING REDUCED */}
+        <div className="bg-white/10 border border-white/20 px-6 py-2 md:py-2.5 rounded-[12px] flex items-center gap-2 backdrop-blur-sm mb-2 shadow-sm">
+          <Timer size={24} weight="fill" className="text-white" />
+          <p className="text-white text-[16px] md:text-[18px] tracking-wide font-medium">{`Average Response Time: `} <span className="font-bold">20-30 Minutes</span></p>
+        </div>
+
         <h2 className="font-bold text-[36px] md:text-[56px] lg:text-[64px] text-white leading-[1.1] tracking-tight">Locked Out or Lost Your Keys?</h2>
         <p className="font-medium text-[20px] md:text-[28px] lg:text-[32px] text-white opacity-90">{`We're on the way, call now and get back on the road fast.`}</p>
         
-        <div className="flex flex-col sm:flex-row gap-5 mt-8 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row gap-5 mt-6 w-full sm:w-auto">
           <div className="bg-white rounded-[12px] shadow-[0px_20px_40px_rgba(0,0,0,0.3)] px-10 py-5 cursor-pointer hover:scale-105 hover:bg-gray-50 transition-all duration-300 flex items-center justify-center gap-3">
              <Phone size={28} weight="fill" className="text-[#dc0000]" />
              <p className="font-bold text-[#dc0000] text-[18px] md:text-[22px] whitespace-nowrap tracking-wide">CALL NOW: 086 200 0066</p>
@@ -507,12 +499,7 @@ function FinalCta() {
           </div>
         </div>
 
-        <div className="bg-white/10 border border-white/20 px-8 py-4 rounded-[12px] flex items-center gap-3 mt-6 backdrop-blur-sm">
-          <Timer size={28} weight="fill" className="text-white" />
-          <p className="text-white text-[18px] md:text-[20px] tracking-wide">{`Average Response Time: `} <span className="font-bold">20-30 Minutes</span></p>
-        </div>
-
-        <p className="text-white/60 text-[15px] md:text-[18px] mt-6 font-medium tracking-widest uppercase">
+        <p className="text-white/60 text-[15px] md:text-[18px] mt-8 font-medium tracking-widest uppercase">
           {`Available 24/7 • Mobile Service • All Car Makes & Models`}
         </p>
       </div>
@@ -622,7 +609,6 @@ export default function NavanCarKeysLocksmiths() {
       >
         <FixedHeader />
         
-        {/* Added Margin Top to compensate for Fixed Header */}
         <main className="mt-[116px] md:mt-[128px]">
           <HeroSection />
           <EmergencySteps />
