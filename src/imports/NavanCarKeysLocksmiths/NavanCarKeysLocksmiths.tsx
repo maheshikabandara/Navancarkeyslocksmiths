@@ -39,7 +39,6 @@ function HeroNav() {
           </div>
           
           <div className="flex gap-5 md:gap-6 items-center">
-            {/* Highlighted Red Call Button */}
             <div className="bg-[#c50101] hover:bg-red-700 transition-colors duration-300 px-5 py-2.5 rounded-[8px] flex gap-2 items-center text-white cursor-pointer shadow-lg">
               <Phone size={22} weight="fill" />
               <p className="font-bold text-[15px] md:text-[16px] whitespace-nowrap">086 200 0066</p>
@@ -98,7 +97,7 @@ function HeroNav() {
           </div>
         </div>
 
-        {/* Right Side (Image matching exactly below navbar, full height) */}
+        {/* Right Side (Image) */}
         <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 flex flex-col z-10">
           <img alt="Car keys hanging" className="absolute inset-0 object-cover w-full h-full" src={heroImg} />
         </div>
@@ -116,7 +115,7 @@ function EmergencySteps() {
         {/* Split Layout */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-start">
           
-          {/* Left Side: Heading */}
+          {/* Left Side: Heading & Banner */}
           <div className="w-full lg:w-1/2 flex flex-col pt-4 lg:pt-12">
             <h2 className="font-bold text-[36px] md:text-[48px] lg:text-[56px] text-black leading-[1.2] tracking-tight">
               Locked Out?<br />Follow These 3 Steps
@@ -124,6 +123,14 @@ function EmergencySteps() {
             <p className="font-medium text-[18px] md:text-[22px] text-gray-600 mt-6 leading-relaxed">
               We'll guide you through this, stay calm, we're here to help
             </p>
+
+            {/* Moved Banner: "This is what we do..." */}
+            <div className="bg-[#c50101] rounded-[12px] w-full p-5 lg:p-6 flex items-center justify-center md:justify-start gap-4 shadow-lg mt-10">
+              <ShieldCheck size={32} weight="fill" className="text-white hidden sm:block shrink-0" />
+              <p className="font-semibold text-[18px] md:text-[20px] text-white text-center md:text-left">
+                {`This is what we do every day. You're in safe hands.`}
+              </p>
+            </div>
           </div>
 
           {/* Right Side: Step Cards */}
@@ -163,14 +170,6 @@ function EmergencySteps() {
             </div>
 
           </div>
-        </div>
-
-        {/* Missing Banner Added Back */}
-        <div className="bg-[#c50101] rounded-[12px] w-full p-5 lg:p-6 flex items-center justify-center gap-3 shadow-lg mt-4 lg:mt-6">
-          <ShieldCheck size={28} weight="fill" className="text-white hidden sm:block" />
-          <p className="font-semibold text-[18px] md:text-[22px] text-white text-center">
-            {`This is what we do every day. You're in safe hands.`}
-          </p>
         </div>
 
       </div>
