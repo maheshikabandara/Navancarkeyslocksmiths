@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   Phone, MapPin, FacebookLogo, Check, WhatsappLogo,
-  Key, DeviceMobile, LockOpen, Cpu, Car, Timer, Star, Wrench, Siren, Envelope
+  Key, DeviceMobile, LockOpen, Cpu, Car, Timer, Star, Wrench, Siren, Envelope, ShieldCheck
 } from "@phosphor-icons/react";
 
 import svgPaths from "./svg-3y9bx4m8zm";
@@ -111,37 +111,68 @@ function HeroNav() {
 function EmergencySteps() {
   return (
     <div className="bg-white py-16 lg:py-24 w-full" data-name="Emergency Steps">
-      <div className="w-full mx-auto px-6 lg:px-[80px] flex flex-col items-center gap-12 lg:gap-16">
-        <div className="text-center w-full max-w-4xl mx-auto">
-          <h2 className="font-bold text-[32px] md:text-[44px] text-black tracking-tight">Locked Out? Follow These 3 Steps</h2>
-          <p className="font-medium text-[18px] md:text-[22px] text-gray-600 mt-4">{`We'll guide you through this, stay calm, we're here to help`}</p>
-        </div>
+      <div className="w-full max-w-[1600px] mx-auto px-6 lg:px-[80px] flex flex-col gap-12 lg:gap-16">
         
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 w-full justify-center max-w-[1400px] mx-auto">
-          <div className="bg-[#fdfdfd] border-2 border-[#c50101] p-8 lg:p-10 rounded-[14px] flex-1 flex flex-col items-center text-center gap-4 lg:gap-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-[#c50101] w-[70px] h-[70px] md:w-[90px] md:h-[90px] rounded-[14px] flex items-center justify-center text-white font-bold text-3xl md:text-4xl">1</div>
-            <p className="font-bold text-[22px] md:text-[26px] text-black">Stay where you are</p>
-            <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed">{`Don't panic. Note your exact location and keep safe.`}</p>
+        {/* Split Layout */}
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center lg:items-start">
+          
+          {/* Left Side: Heading */}
+          <div className="w-full lg:w-1/2 flex flex-col pt-4 lg:pt-12">
+            <h2 className="font-bold text-[36px] md:text-[48px] lg:text-[56px] text-black leading-[1.2] tracking-tight">
+              Locked Out?<br />Follow These 3 Steps
+            </h2>
+            <p className="font-medium text-[18px] md:text-[22px] text-gray-600 mt-6 leading-relaxed">
+              We'll guide you through this, stay calm, we're here to help
+            </p>
           </div>
-          <div className="bg-[#fdfdfd] border-2 border-[#c50101] p-8 lg:p-10 rounded-[14px] flex-1 flex flex-col items-center text-center gap-4 lg:gap-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-[#c50101] w-[70px] h-[70px] md:w-[90px] md:h-[90px] rounded-[14px] flex items-center justify-center text-white font-bold text-3xl md:text-4xl">2</div>
-            <p className="font-bold text-[22px] md:text-[26px] text-black">Call us immediately</p>
-            <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed">{`We'll answer right away and get details about your situation.`}</p>
-            <div className="bg-[#c50101] px-5 py-3 rounded-[10px] text-white font-bold flex items-center gap-2 mt-auto text-lg hover:bg-red-800 transition cursor-pointer">
-              <Phone size={20} weight="fill" />
-              086 200 0066
+
+          {/* Right Side: Step Cards */}
+          <div className="w-full lg:w-1/2 flex flex-col gap-6">
+            
+            {/* Step 1 */}
+            <div className="bg-white border-[2px] border-[#c50101] p-6 md:p-8 rounded-[12px] flex flex-col sm:flex-row items-start sm:items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-[#c50101] w-[60px] h-[60px] shrink-0 rounded-[8px] flex items-center justify-center text-white font-bold text-3xl">
+                1
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="font-bold text-[20px] md:text-[24px] text-black leading-tight">Stay where you are</p>
+                <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed">Don't panic. Note your exact location and keep safe.</p>
+              </div>
             </div>
-          </div>
-          <div className="bg-[#fdfdfd] border-2 border-[#c50101] p-8 lg:p-10 rounded-[14px] flex-1 flex flex-col items-center text-center gap-4 lg:gap-6 shadow-sm hover:shadow-md transition-shadow">
-            <div className="bg-[#c50101] w-[70px] h-[70px] md:w-[90px] md:h-[90px] rounded-[14px] flex items-center justify-center text-white font-bold text-3xl md:text-4xl">3</div>
-            <p className="font-bold text-[22px] md:text-[26px] text-black">{`We'll be there in 20-30 minutes`}</p>
-            <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed">Our mobile unit will arrive fast and get you back on the road.</p>
+
+            {/* Step 2 */}
+            <div className="bg-white border-[2px] border-[#c50101] p-6 md:p-8 rounded-[12px] flex flex-col sm:flex-row items-start sm:items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-[#c50101] w-[60px] h-[60px] shrink-0 rounded-[8px] flex items-center justify-center text-white font-bold text-3xl">
+                2
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="font-bold text-[20px] md:text-[24px] text-black leading-tight">Call us immediately</p>
+                <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed">We'll answer right away and get details about your situation.</p>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="bg-white border-[2px] border-[#c50101] p-6 md:p-8 rounded-[12px] flex flex-col sm:flex-row items-start sm:items-center gap-6 shadow-sm hover:shadow-md transition-shadow">
+              <div className="bg-[#c50101] w-[60px] h-[60px] shrink-0 rounded-[8px] flex items-center justify-center text-white font-bold text-3xl">
+                3
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <p className="font-bold text-[20px] md:text-[24px] text-black leading-tight">We'll be there in 20-30 minutes</p>
+                <p className="text-[16px] md:text-[18px] text-gray-600 leading-relaxed">Our mobile unit will arrive fast and get you back on the road.</p>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div className="bg-[#c50101] rounded-[12px] w-full max-w-4xl p-5 lg:p-6 text-center shadow-lg">
-          <p className="font-semibold text-[18px] md:text-[22px] text-white">{`This is what we do every day. You're in safe hands.`}</p>
+        {/* Missing Banner Added Back */}
+        <div className="bg-[#c50101] rounded-[12px] w-full p-5 lg:p-6 flex items-center justify-center gap-3 shadow-lg mt-4 lg:mt-6">
+          <ShieldCheck size={28} weight="fill" className="text-white hidden sm:block" />
+          <p className="font-semibold text-[18px] md:text-[22px] text-white text-center">
+            {`This is what we do every day. You're in safe hands.`}
+          </p>
         </div>
+
       </div>
     </div>
   );
@@ -219,7 +250,7 @@ function ServicesSection() {
 
         <div className="text-center mt-4 flex flex-col md:flex-row items-center justify-center gap-6">
           <p className="font-medium text-[18px] md:text-[20px] text-gray-800">{`Not sure what you need? Call us and we'll advise you.`}</p>
-          <div className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center gap-2 text-lg">
+          <div className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
             <Phone size={24} weight="fill" />
             086 200 0066
           </div>
@@ -470,7 +501,6 @@ function FinalCta() {
 
 function Footer() {
   return (
-    // 5. Footer Background Gradient
     <div className="bg-[linear-gradient(146deg,#000_0%,#101828_50%,#000_100%)] border-t-4 border-[#c50101] w-full" data-name="Footer">
       <div className="w-full mx-auto px-6 lg:px-[80px] py-16 md:py-20 flex flex-col gap-16 max-w-[1600px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 justify-between w-full">
