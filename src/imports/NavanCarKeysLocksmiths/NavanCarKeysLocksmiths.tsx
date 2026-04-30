@@ -9,25 +9,22 @@ import heroImg from "../hero.png";
 import workImg from "../work.png";
 import aboutImg from "../about.png";
 
-function EmergencyBar() {
+// 1. Sticky Header Component (Always visible)
+function FixedHeader() {
   return (
-    <div className="bg-[#c50101] w-full z-50 relative">
-      <div className="w-full mx-auto px-6 py-[12px] flex items-center justify-center text-center">
-        <p className="font-semibold text-[14px] md:text-[16px] text-white tracking-wide">
-          {`LOCKED OUT? WE'RE 20–30 MINUTES AWAY`}
-        </p>
+    <header className="fixed top-0 left-0 w-full z-[100] shadow-xl flex flex-col">
+      {/* Emergency Top Bar */}
+      <div className="bg-[#c50101] w-full">
+        <div className="w-full mx-auto px-6 py-[12px] flex items-center justify-center text-center">
+          <p className="font-semibold text-[14px] md:text-[16px] text-white tracking-wide">
+            {`LOCKED OUT? WE'RE 20–30 MINUTES AWAY`}
+          </p>
+        </div>
       </div>
-    </div>
-  );
-}
 
-function HeroNav() {
-  return (
-    <div className="w-full flex flex-col bg-[linear-gradient(146deg,#000_0%,#101828_50%,#000_100%)]" data-name="Hero + Nav">
-      
-      {/* 1. Solid Navbar Area */}
-      <div className="w-full bg-[#0A0F1A] border-b border-white/5 z-40 relative">
-        <div className="w-full mx-auto px-6 lg:px-[80px] py-5 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+      {/* Solid Navbar Area */}
+      <div className="w-full bg-[#0A0F1A] border-b border-white/5">
+        <div className="w-full mx-auto px-6 lg:px-[80px] py-4 md:py-5 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
           <p className="font-bold text-[20px] md:text-[26px] text-white whitespace-nowrap tracking-tight">
             Navan Car Keys Locksmiths
           </p>
@@ -39,44 +36,54 @@ function HeroNav() {
           </div>
           
           <div className="flex gap-5 md:gap-6 items-center">
-            <div className="bg-[#c50101] hover:bg-red-700 transition-colors duration-300 px-5 py-2.5 rounded-[8px] flex gap-2 items-center text-white cursor-pointer shadow-lg">
-              <Phone size={22} weight="fill" />
+            {/* Highlighted Red Call Button */}
+            <a href="tel:0862000066" className="bg-[#c50101] hover:bg-red-700 transition-colors duration-300 px-5 py-2.5 rounded-[8px] flex gap-2 items-center text-white cursor-pointer shadow-lg">
+              <Phone size={22} weight="fill" className="animate-pulse" />
               <p className="font-bold text-[15px] md:text-[16px] whitespace-nowrap">086 200 0066</p>
-            </div>
+            </a>
             
             <div className="hidden sm:flex gap-2 items-center text-white">
-              <MapPin size={22} weight="fill" />
+              <MapPin size={22} weight="fill" className="text-[#c50101]" />
               <p className="font-normal text-[15px] whitespace-nowrap">Serving Meath</p>
             </div>
             <FacebookLogo size={32} weight="fill" className="text-white cursor-pointer hover:text-[#c50101] transition-colors" />
           </div>
         </div>
       </div>
+    </header>
+  );
+}
 
-      {/* 2. Hero Content Area */}
-      <div className="w-full flex flex-col lg:flex-row flex-1 min-h-[600px] lg:min-h-[calc(100vh-88px)]">
+function HeroSection() {
+  return (
+    <div className="w-full flex flex-col bg-[linear-gradient(146deg,#000_0%,#101828_50%,#000_100%)]" data-name="Hero">
+      <div className="w-full flex flex-col lg:flex-row flex-1 min-h-[600px] lg:min-h-[calc(100vh-130px)]">
         
-        {/* Left Side (Text) */}
+        {/* Left Side (Text & Urgency) */}
         <div className="w-full lg:w-1/2 flex flex-col justify-center px-6 lg:pl-[80px] lg:pr-16 py-16 lg:py-0 z-20">
-          <div className="max-w-[650px] flex flex-col gap-6">
-            <p className="font-semibold text-white text-[18px] md:text-[22px] tracking-wide">
-              Mobile Locksmith
-            </p>
-            <h1 className="font-bold text-white leading-[1.1] text-[48px] md:text-[64px] lg:text-[76px] tracking-tight">
+          <div className="max-w-[650px] flex flex-col gap-5 mt-4">
+            
+            {/* Urgency Badge */}
+            <div className="inline-flex items-center gap-2 bg-red-600/20 border border-red-500/30 px-4 py-2 rounded-full w-fit">
+              <Siren size={20} weight="fill" className="text-red-500" />
+              <p className="font-semibold text-white text-[14px] md:text-[16px] tracking-wide">
+                24/7 Emergency Locksmith in Meath
+              </p>
+            </div>
+
+            <h1 className="font-bold text-white leading-[1.1] text-[48px] md:text-[60px] lg:text-[72px] tracking-tight">
               Lost Your Car<br />Keys or <span className="text-[#c50101]">Locked<br />Out?</span>
             </h1>
-            <p className="font-normal text-[#d1d5dc] text-[16px] md:text-[20px] leading-relaxed">
-              We come to you anywhere in Meath, fast, reliable, no damage.
+            
+            <p className="font-normal text-[#d1d5dc] text-[16px] md:text-[20px] leading-relaxed mt-2">
+              <span className="font-bold text-white text-[18px] md:text-[22px]">Locked out? We're on the way in minutes.</span><br className="mb-2 hidden sm:block"/>
+              Fast response and on-site quickly for emergency callouts anywhere in Meath, Navan & surrounding areas.
             </p>
             
-            <div className="flex flex-col gap-4 mt-2">
+            <div className="flex flex-col gap-3 mt-2">
               <div className="flex gap-3 items-center">
                 <Check size={24} weight="bold" className="text-[#c50101]" />
-                <p className="text-[16px] md:text-[18px] text-white font-medium">24/7 Emergency Response</p>
-              </div>
-              <div className="flex gap-3 items-center">
-                <Check size={24} weight="bold" className="text-[#c50101]" />
-                <p className="text-[16px] md:text-[18px] text-white font-medium">Mobile Service (We Come to You)</p>
+                <p className="text-[16px] md:text-[18px] text-white font-medium">No Damage Entry</p>
               </div>
               <div className="flex gap-3 items-center">
                 <Check size={24} weight="bold" className="text-[#c50101]" />
@@ -85,21 +92,36 @@ function HeroNav() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full sm:w-auto">
-              <div className="bg-[#c50101] rounded-[10px] shadow-[0px_10px_20px_rgba(197,1,1,0.3)] cursor-pointer hover:bg-red-700 transition flex items-center justify-center gap-2 px-8 py-4 md:py-5">
-                <Phone size={22} weight="fill" className="text-white" />
+              <a href="tel:0862000066" className="bg-[#c50101] rounded-[10px] shadow-[0px_10px_20px_rgba(197,1,1,0.3)] cursor-pointer hover:bg-red-700 transition flex items-center justify-center gap-2 px-8 py-4 md:py-5">
+                <Phone size={22} weight="fill" className="text-white animate-pulse" />
                 <p className="font-bold text-[16px] md:text-[18px] text-white whitespace-nowrap">CALL NOW – 086 200 0066</p>
-              </div>
+              </a>
               <div className="bg-white rounded-[10px] shadow-lg cursor-pointer hover:bg-gray-100 transition flex items-center justify-center gap-2 px-8 py-4 md:py-5">
                 <WhatsappLogo size={24} weight="fill" className="text-black" />
                 <p className="font-bold text-[16px] md:text-[18px] text-black whitespace-nowrap">WHATSAPP US</p>
               </div>
             </div>
+
+            {/* Trust Signals Under Buttons */}
+            <div className="flex items-center gap-3 mt-4">
+              <div className="flex gap-1 text-[#FDCB02]">
+                <Star size={20} weight="fill" />
+                <Star size={20} weight="fill" />
+                <Star size={20} weight="fill" />
+                <Star size={20} weight="fill" />
+                <Star size={20} weight="fill" />
+              </div>
+              <p className="font-medium text-gray-300 text-[14px] md:text-[16px]">
+                500+ happy customers in Meath
+              </p>
+            </div>
+
           </div>
         </div>
 
-        {/* Right Side (Image) */}
-        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 flex flex-col z-10">
-          <img alt="Car keys hanging" className="absolute inset-0 object-cover w-full h-full" src={heroImg} />
+        {/* Right Side (Image matching exactly below navbar) */}
+        <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-0 flex flex-col z-10 bg-black border-l-4 border-[#c50101] lg:border-none">
+          <img alt="Car keys hanging" className="absolute inset-0 object-cover w-full h-full opacity-90" src={heroImg} />
         </div>
 
       </div>
@@ -124,7 +146,7 @@ function EmergencySteps() {
               We'll guide you through this, stay calm, we're here to help
             </p>
 
-            {/* Moved Banner: "This is what we do..." */}
+            {/* Added Banner: "This is what we do..." */}
             <div className="bg-[#c50101] rounded-[12px] w-full p-5 lg:p-6 flex items-center justify-center md:justify-start gap-4 shadow-lg mt-10">
               <ShieldCheck size={32} weight="fill" className="text-white hidden sm:block shrink-0" />
               <p className="font-semibold text-[18px] md:text-[20px] text-white text-center md:text-left">
@@ -249,10 +271,10 @@ function ServicesSection() {
 
         <div className="text-center mt-4 flex flex-col md:flex-row items-center justify-center gap-6">
           <p className="font-medium text-[18px] md:text-[20px] text-gray-800">{`Not sure what you need? Call us and we'll advise you.`}</p>
-          <div className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
+          <a href="tel:0862000066" className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
             <Phone size={24} weight="fill" />
             086 200 0066
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -598,16 +620,20 @@ export default function NavanCarKeysLocksmiths() {
         className="w-full flex flex-col overflow-x-hidden bg-white text-black" 
         data-name="Navan Car Keys Locksmiths"
       >
-        <EmergencyBar />
-        <HeroNav />
-        <EmergencySteps />
-        <ServicesSection />
-        <TrustStrip />
-        <ProofSection />
-        <ReviewsSection />
-        <AboutSection />
-        <FinalCta />
-        <Footer />
+        <FixedHeader />
+        
+        {/* Added Margin Top to compensate for Fixed Header */}
+        <main className="mt-[116px] md:mt-[128px]">
+          <HeroSection />
+          <EmergencySteps />
+          <ServicesSection />
+          <TrustStrip />
+          <ProofSection />
+          <ReviewsSection />
+          <AboutSection />
+          <FinalCta />
+          <Footer />
+        </main>
 
         <div 
           className={`fixed bottom-0 left-0 w-full p-4 z-[100] md:hidden transition-transform duration-500 ease-in-out ${
