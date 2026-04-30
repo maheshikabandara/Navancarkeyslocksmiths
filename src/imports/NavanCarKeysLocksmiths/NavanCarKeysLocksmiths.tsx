@@ -1,7 +1,7 @@
 import svgPaths from "./svg-3y9bx4m8zm";
-import heroImg from "./imports/hero.png";
+import heroImg from "../hero.png";
 import imgContainer from "./b06044e74c8c0fffde11e7aaaa37d77cbfd6fde2.png";
-import aboutImg from "./imports/about.png";
+import aboutImg from "../about.png";
 
 function IconBase() {
   return (
