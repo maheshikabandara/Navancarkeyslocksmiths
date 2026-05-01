@@ -11,7 +11,8 @@ import aboutImg from "../about.png";
 
 function FixedHeader() {
   return (
-    <header className="fixed top-0 left-0 w-full z-[100] shadow-xl flex flex-col">
+    // 'relative md:fixed' added to make it sticky ONLY on tablet/desktop
+    <header className="relative md:fixed md:top-0 md:left-0 w-full z-[100] md:shadow-xl flex flex-col">
       <div className="bg-[#c50101] w-full">
         <div className="w-full mx-auto px-6 py-[12px] flex items-center justify-center text-center">
           <p className="font-semibold text-[14px] md:text-[16px] text-white tracking-wide">
@@ -65,7 +66,6 @@ function HeroSection() {
               </p>
             </div>
 
-            {/* Changed Hero Heading */}
             <h1 className="font-bold text-white leading-[1.1] text-[48px] md:text-[60px] lg:text-[72px] tracking-tight">
               Locked out?<br />We're on the way in <span className="text-[#c50101]">minutes.</span>
             </h1>
@@ -462,7 +462,6 @@ function AboutSection() {
           <div className="border-4 border-[#c50101] rounded-[16px] overflow-hidden h-[400px] md:h-[600px] shadow-2xl relative">
             <img alt="About us locksmith working" className="object-cover w-full h-full absolute inset-0" src={aboutImg} />
           </div>
-          {/* Floating Badge */}
           <div className="absolute top-10 right-[-10px] md:right-[-30px] bg-white border-2 border-[#c50101] rounded-[12px] p-5 lg:p-6 shadow-2xl flex flex-col gap-1 z-10">
             <p className="text-[16px] text-gray-500 font-medium uppercase tracking-wider">Serving</p>
             <p className="font-bold text-[22px] md:text-[26px] text-black tracking-tight">Meath & Beyond</p>
@@ -479,7 +478,6 @@ function FinalCta() {
     <div className="bg-gradient-to-br from-[#8B0000] to-[#4A0000] w-full relative overflow-hidden" data-name="Final CTA">
       <div className="w-full mx-auto px-6 lg:px-[80px] py-[80px] md:py-[140px] flex flex-col items-center justify-center text-center gap-6 relative z-10 max-w-[1600px]">
         
-        {/* MOVED UP & PADDING REDUCED */}
         <div className="bg-white/10 border border-white/20 px-6 py-2 md:py-2.5 rounded-[12px] flex items-center gap-2 backdrop-blur-sm mb-2 shadow-sm">
           <Timer size={24} weight="fill" className="text-white" />
           <p className="text-white text-[16px] md:text-[18px] tracking-wide font-medium">{`Average Response Time: `} <span className="font-bold">20-30 Minutes</span></p>
@@ -513,7 +511,6 @@ function Footer() {
       <div className="w-full mx-auto px-6 lg:px-[80px] py-16 md:py-20 flex flex-col gap-16 max-w-[1600px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 justify-between w-full">
           
-          {/* Col 1 */}
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-[#c50101] text-[22px] md:text-[26px]">Navan Car Keys Locksmiths</h3>
             <div className="flex flex-col gap-5 text-white">
@@ -532,7 +529,6 @@ function Footer() {
             </div>
           </div>
 
-          {/* Col 2 */}
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-[#c50101] text-[22px] md:text-[26px]">Service Areas</h3>
             <div className="flex gap-12 text-gray-300 text-lg">
@@ -552,7 +548,6 @@ function Footer() {
             <p className="text-gray-500 text-[16px] mt-2 italic">+ surrounding areas</p>
           </div>
 
-          {/* Col 3 */}
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-[#c50101] text-[22px] md:text-[26px]">Our Services</h3>
             <div className="flex flex-col gap-3 text-gray-300 text-lg">
