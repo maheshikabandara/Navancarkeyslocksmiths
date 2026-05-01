@@ -11,8 +11,8 @@ import aboutImg from "../about.png";
 
 function FixedHeader() {
   return (
-    // 'relative md:fixed' added to make it sticky ONLY on tablet/desktop
-    <header className="relative md:fixed md:top-0 md:left-0 w-full z-[100] md:shadow-xl flex flex-col">
+    // relative on mobile, fixed on desktop
+    <header className="relative md:fixed md:top-0 md:left-0 w-full z-[100] shadow-xl flex flex-col">
       <div className="bg-[#c50101] w-full">
         <div className="w-full mx-auto px-6 py-[12px] flex items-center justify-center text-center">
           <p className="font-semibold text-[14px] md:text-[16px] text-white tracking-wide">
@@ -256,10 +256,10 @@ function ServicesSection() {
 
         <div className="text-center mt-4 flex flex-col md:flex-row items-center justify-center gap-6">
           <p className="font-medium text-[18px] md:text-[20px] text-gray-800">{`Not sure what you need? Call us and we'll advise you.`}</p>
-          <div className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
+          <a href="tel:0862000066" className="bg-[#c50101] px-8 py-4 rounded-[10px] text-white font-bold cursor-pointer hover:bg-red-800 transition shadow-lg flex items-center justify-center gap-2 text-lg">
             <Phone size={24} weight="fill" />
             086 200 0066
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -487,10 +487,10 @@ function FinalCta() {
         <p className="font-medium text-[20px] md:text-[28px] lg:text-[32px] text-white opacity-90">{`We're on the way, call now and get back on the road fast.`}</p>
         
         <div className="flex flex-col sm:flex-row gap-5 mt-6 w-full sm:w-auto">
-          <div className="bg-white rounded-[12px] shadow-[0px_20px_40px_rgba(0,0,0,0.3)] px-10 py-5 cursor-pointer hover:scale-105 hover:bg-gray-50 transition-all duration-300 flex items-center justify-center gap-3">
+          <a href="tel:0862000066" className="bg-white rounded-[12px] shadow-[0px_20px_40px_rgba(0,0,0,0.3)] px-10 py-5 cursor-pointer hover:scale-105 hover:bg-gray-50 transition-all duration-300 flex items-center justify-center gap-3">
              <Phone size={28} weight="fill" className="text-[#dc0000]" />
              <p className="font-bold text-[#dc0000] text-[18px] md:text-[22px] whitespace-nowrap tracking-wide">CALL NOW: 086 200 0066</p>
-          </div>
+          </a>
           <div className="bg-black/20 border-2 border-white/20 rounded-[12px] px-10 py-5 cursor-pointer hover:bg-black/40 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
              <WhatsappLogo size={28} weight="fill" className="text-white" />
              <p className="font-bold text-white text-[18px] md:text-[22px] whitespace-nowrap tracking-wide">WHATSAPP US</p>
@@ -511,13 +511,14 @@ function Footer() {
       <div className="w-full mx-auto px-6 lg:px-[80px] py-16 md:py-20 flex flex-col gap-16 max-w-[1600px]">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 justify-between w-full">
           
+          {/* Col 1 */}
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-[#c50101] text-[22px] md:text-[26px]">Navan Car Keys Locksmiths</h3>
             <div className="flex flex-col gap-5 text-white">
-              <div className="flex items-center gap-4 hover:text-[#c50101] transition-colors cursor-pointer w-fit">
+              <a href="tel:0862000066" className="flex items-center gap-4 hover:text-[#c50101] transition-colors cursor-pointer w-fit">
                 <Phone size={24} weight="fill" className="text-gray-400" />
                 <p className="text-lg">086 200 0066</p>
-              </div>
+              </a>
               <div className="flex items-center gap-4 hover:text-[#c50101] transition-colors cursor-pointer w-fit">
                 <Envelope size={24} weight="fill" className="text-gray-400" />
                 <p className="text-lg">navancarkeys@gmail.com</p>
@@ -529,6 +530,7 @@ function Footer() {
             </div>
           </div>
 
+          {/* Col 2 */}
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-[#c50101] text-[22px] md:text-[26px]">Service Areas</h3>
             <div className="flex gap-12 text-gray-300 text-lg">
@@ -548,6 +550,7 @@ function Footer() {
             <p className="text-gray-500 text-[16px] mt-2 italic">+ surrounding areas</p>
           </div>
 
+          {/* Col 3 */}
           <div className="flex flex-col gap-6">
             <h3 className="font-bold text-[#c50101] text-[22px] md:text-[26px]">Our Services</h3>
             <div className="flex flex-col gap-3 text-gray-300 text-lg">
@@ -581,6 +584,7 @@ export default function NavanCarKeysLocksmiths() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // Show mobile fixed bottom button after scrolling down 500px
       if (window.scrollY > 500) {
         setShowStickyButton(true);
       } else {
@@ -604,7 +608,8 @@ export default function NavanCarKeysLocksmiths() {
       >
         <FixedHeader />
         
-        <main className="mt-[116px] md:mt-[128px]">
+        {/* Main Content (Pushing down on desktop so header doesn't overlap) */}
+        <main className="mt-0 md:mt-[124px] lg:mt-[132px]">
           <HeroSection />
           <EmergencySteps />
           <ServicesSection />
